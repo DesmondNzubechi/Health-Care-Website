@@ -1,0 +1,245 @@
+/* GOOGLE FONTS START */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+/* GOOGLE FONTS END */
+
+/*=========== GENERAL STYLING  START  ===========*/
+
+
+*{
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+:root{
+	--blue: #0061ff;
+	--dark: #25282B;
+	--light: #E5EFFB;
+	--gray: #7F7F7F;
+	--white: #ffffff;
+}
+
+.darkTheme{
+
+}
+
+/*=========== GENERAL STYLING  END  ===========*/
+
+/*=========== HEADER STYLING  START  ===========*/
+
+body{
+	background: var(--light);
+}
+
+header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	margin: 10px 20px;
+}
+
+/* logo styling */
+.logo{
+	align-self: flex-start;
+	position: relative;
+	z-index: ;
+}
+.logo a{
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 30px;
+ font-weight: 700;
+ color: var(--blue);
+}
+
+/* nav links */
+.links{
+	align-self: flex-start;
+}
+.links ul{
+	display: flex;
+	justify-content: center;
+	align-items:flex-start; 
+	
+}
+.links a{
+	color: var(--dark);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.links ul li{
+	margin: 0 20px;
+	cursor: pointer;
+	
+}
+.links a{
+	text-transform: uppercase;
+	font-size: 20px;
+	position: relative;
+
+}
+.links h3 i{
+	font-size: 20px;
+	position:relative;
+    right: 0;
+    margin-left: 5px;
+}
+.links ul li > a:hover{
+	color: var(--blue);
+	transition: .5s;
+}
+#up, #upp{
+	display: none;
+}
+.drop ul{
+	padding: 20px;
+	display: none;
+	position: absolute;
+	background: var(--light);
+	z-index: 1;
+	color: var(--dark);
+
+}
+.drop ul li a{
+	font-size: 15px;
+	font-weight: 500 !important;
+	margin: 10px;
+}
+.drop ul li a:hover{
+	color:var(--blue) ;
+	transition: .5s;
+}
+/*.drp  {
+	position: relative;
+	display: block;
+  
+
+}*/
+/*
+.dropdownLinks :hover + .dropdown{
+	display: inline-block;
+}
+.dropdown li{
+	list-style: none;
+	font-size: 20px;
+}
+.dropdown li a{
+	color: var(--light);
+	font-size: 20px;
+	margin: 20px;
+	text-decoration: none;
+
+}*/
+/*user account */
+.acct{
+	align-self: flex-start;
+	background: var(--blue);
+	padding: 10px;
+	cursor: pointer;
+	color: var(--light);
+	border-radius: 5px solid var(--gray);
+	border-radius: 5px;
+}
+
+.users{
+	margin: 10px 0;
+	display:none;
+	justify-content: center;
+	transition: 1s;
+
+}
+.users a{
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--white);
+  margin: 10px 0;
+  font-weight: 600;
+
+}
+.users a:hover{
+	color: var(--dark);
+	transition: .5s;
+}
+/*menu_bar*/
+
+.bars{
+	
+	display: none;
+	align-self: flex-start;
+	
+}
+.bars i{
+	border-radius: 5px;
+	padding: 5px;
+	background: var(--dark);
+	font-size: 30px;
+	top: 0;
+	color: var(--light);
+	font-weight: 800;
+}
+
+/*============ HEADER END ===========*/
+
+
+
+/*======== RESPONSIVENESS ======*/
+
+@media(max-width: 768px) {
+
+/*nav links*/
+	.links {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -1000px;
+	transition: 1s;
+	justify-content: center;
+background: var(--light);
+color: var(--light);
+width: 100%;
+height: 100vh;
+	padding-top: 100px;
+		
+}
+.links > ul{
+	display: block;
+}
+.links ul li a{
+	display: block;
+	color: var(--dark);
+	margin: 20px 0;
+	font-size: 20px;
+}
+.cont a{
+	color: var(--light);
+}
+.links div{
+	margin: 30px ;
+}
+
+.bars{
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+#close{
+	display: none;
+}
+#open:hover{
+	background: var(--light);
+	border: solid 2px var(--dark);
+	color: var(--dark);
+}
+#close:hover{
+	background: var(--light);
+	border: solid 2px var(--dark);
+	color: var(--dark);
+}
+
+}
