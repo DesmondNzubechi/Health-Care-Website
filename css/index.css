@@ -48,6 +48,7 @@ header{
 	padding:30px 10px ;
 	background: var(--light);
 	box-shadow: 0 0 5px var(--white);
+	z-index: 999;
 }
 
 /* logo styling */
@@ -86,9 +87,7 @@ header{
 	font-size: 20px !important;
 	
 }
-.subnav{
-	font-size: 20px !important;
-}
+
 .links a{
 	text-transform: uppercase;
 	position: relative;
@@ -125,27 +124,7 @@ header{
 	color:var(--blue) ;
 	transition: .5s;
 }
-/*.drp  {
-	position: relative;
-	display: block;
-  
 
-}*/
-/*
-.dropdownLinks :hover + .dropdown{
-	display: inline-block;
-}
-.dropdown li{
-	list-style: none;
-	font-size: 20px;
-}
-.dropdown li a{
-	color: var(--light);
-	font-size: 20px;
-	margin: 20px;
-	text-decoration: none;
-
-}*/
 /*user account */
 .acct{
 	align-self: flex-start;
@@ -184,6 +163,7 @@ header{
 	color: var(--dark);
 	transition: .5s;
 }
+
 /*menu_bar*/
 
 .bars{
@@ -329,10 +309,182 @@ font-size: 20px;
 /*============ WELCOME NOTE END ===========*/
 
 
+/*============ SOLUTION CLASS START ===========*/
+
+.solution{
+	background: var(--white);
+  padding: 80px 20px;
+}
+
+.heading .main{
+color: var(--blue);
+font-size: 20px;
+font-weight: bold;
+}
+.heading .subheading{
+	font-size: 30px;
+	font-weight: bolder;
+	color: var(--dark);
+}
+.steps{
+	display: flex;
+	justify-content: center !important;
+}
+.steps div{
+	max-width: 250px;
+	margin: 20px;
+box-shadow: 2px 2px 4px var(--light), -2px -2px 4px var(--light);
+border-radius: 5px;
+transition: .5s;
+padding: 15px;
+}
+.steps div:hover {
+box-shadow: 5px 5px 7px var(--light), -5px -5px 7px var(--light);
+border-radius: 10px;
+padding: 15px;
+}
+.steps i{
+	font-size: 50px;
+	/*background:var(--light);*/
+	color: var(--blue);
+	padding: 10px 20px;
+	border-radius: 100%;
+}
+
+.steps .headin{
+	font-size: 20px;
+	font-weight: bold;
+}
+.steps .subHeading{
+	font-size: 17px;
+	font-weight: 500;
+	color: var(--gray);
+}
+/*============ SOLUTION CLASS END ===========*/
+
+
+/*============ ABOUT CLASS START ===========*/
+.about{
+	background: var(--white);
+	display: flex !important;
+	justify-content: center !important;
+	padding: 40px;
+	
+	border-radius: 20px;
+}
+
+/*abtImg section*/
+
+.abtImg{
+	position: relative;
+	z-index: 0 !important;
+}
+.abtImage{
+background: var(--light);
+border-radius: 20px;
+margin: 20px;
+display: flex;
+	justify-content: center;
+}
+.abtImage img{
+	max-width: 350px;
+	max-height: 350px;
+}
+.group{
+	display: flex;
+	justify-content: flex-end !important;
+	position: absolute;
+	bottom: 5px;
+}
+.group > span{
+	display: block;
+	text-align: center;
+	background: var(--white);
+	box-shadow: 0 10px 2px -2px var(--light);
+	border: solid 2px var(--light);
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: var(--blue);
+	font-weight: 500;
+	
+}
+.group span span{
+	font-weight: 800;
+	
+	color: var(--dark);
+}
+/*
+.phy{
+	position: absolute;
+	bottom: 5px;
+	left: 21%;
+	border-right: 5px var(--light);
+}
+.customer{
+	position: absolute;
+	bottom: 5px;
+	left: 39.2%;
+}
+.feed{
+	position: absolute;
+	bottom: 5px;
+	right: 20%;
+}
+*/
+.abtMain{
+	margin:  ;
+}
+
+.abtUs{
+	font-size: 30px;
+	font-weight: 600;
+	color: var(--blue);
+	margin: 20px 0;
+	
+}
+
+.desc{
+	font-size: 16px;
+	color: var(--gray);
+	font-size: 500;
+}
+
+.bt{
+	background: var(--blue);
+	border-radius: 5px;
+	width: fit-content;
+}
+.bt a{
+	text-decoration: none;
+	color: var(--white);
+	font-size: 25px;
+	margin: 20px 10px;
+}
+/*============ ABOUT CLASS END ===========*/
+
+
+
 /*======== RESPONSIVENESS ======*/
 
 @media(max-width: 768px) {
 
+/*.phy{
+	position: absolute;
+	bottom: 5px;
+	left: 17.9%;
+	border-right: 5px var(--light);
+}
+.customer{
+	position: absolute;
+	bottom: 5px;
+	left: 39.2%;
+}
+.feed{
+	position: absolute;
+	bottom: 5px;
+	right: 12.5%;
+}
+*/
 /*nav links*/
 	.links {
 	display: block;
