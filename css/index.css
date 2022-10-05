@@ -464,6 +464,208 @@ display: flex;
 
 
 
+/*============ OUR_TEAM CLASS START ===========*/
+.our-team{
+	background: var(--white);
+	padding: 40px 60px;
+}
+
+.pro{
+	font-size: 20px;
+	color: var(--blue);
+	font-weight: bold;
+}
+
+.meet{
+	color: var(--dark);
+	font-size: 30px;
+	font-weight: bolder;
+}
+.slide{
+	padding: 10px 20px;
+}
+.teamlead{
+	padding: 5px 20px;
+}
+.teamlead > div{
+	text-align: center;
+	box-shadow: 2px 2px 4px var(--light), -0px -0px 0px var(--gray);
+	border-radius: 7px;
+	padding: 0 !important;
+	margin-bottom: 30px;
+
+}
+.doc-img{
+background: linear-gradient(var(--light), var(--gray));
+margin: 0 !important;
+padding: 0 !important;
+display: flex;
+justify-content: center;
+
+
+}
+.doc-img img{
+	max-width: 250px;
+	margin: 0 !important;
+	max-height: 250px;
+}
+.team-bio span{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 3px 0;
+
+}
+.nn{
+	padding-top: 5px;
+}
+.namE{
+	font-size: 18px;
+	font-weight: 500;
+	padding: 2px 8px;
+}
+.specialty{
+	font-size: 15px;
+	background: var(--light);
+	color: var(--blue);
+	font-weight: 550;
+	padding: 2px 8px;
+	border-radius: 5px;
+}
+
+.patientS{
+	font-size: 15px;
+	
+	color: var(--dark);
+	font-weight: 550;
+	padding: 2px 8px;
+	border-radius: 5px;
+}
+.rating{
+	font-size: 15px;
+	color: var(--dark);
+	padding: 2px 8px;
+	font-weight: 550;
+	font-size: ;
+}
+.rating i{
+	color:yellow;
+}
+/*============ OUR_TEAM CLASS END ===========*/
+
+.aptH{
+	font-size: 25px;
+	font-weight: bolder;
+	color: var(--blue);
+}
+.aptSubH{
+font-size: 20px;
+color: var(--dark);
+font-weight: bold;
+}
+.aptC{
+	display: block;
+	margin: 10px;
+}
+.aptC span{
+	font-size: 15px;
+	color: var(--dark);
+	font-weight: bold;
+}
+
+.aptC span i{
+	color: var(--blue);
+	margin-right: 3px !important;
+}
+.aptL{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.aptImg{
+	margin-top: -20px;
+	position: relative;
+	z-index: 0 !important;
+	min-height: 500px;
+}
+.aptImage{
+background: var(--light);
+border-radius: 20px;
+margin: 20px;
+display: flex;
+	justify-content: flex-end;
+}
+.aptImage img{
+	max-width: 200px;
+	min-height: 350px;
+}
+
+.f{
+	display: flex;
+	justify-content: center !important;
+	position: absolute;
+	top: 0;
+}
+
+.formy{
+	
+	display: flex;
+	justify-content: center;
+}
+.formy form{
+	background: var(--white);
+/*background-color: rgba(255, 255, 255, 0.5);*/
+/*box-shadow: 10px 10px 15px var(--light), -10px -10px 15px var(--blue);*/
+border: 2px solid var(--light);
+border-radius: 10px;
+}
+.formy form div{
+	padding: 5px 10px;
+	margin: 10px;
+}
+.aptUs span{
+	font-size: 20px;
+	color: var(--dark);
+	font-weight: bolder;
+	margin: 10px 0;
+}
+.formy form div label{
+	display: block;
+	color: var(--dark);
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.formy form input {
+	min-width: 250px;
+	background: lightgray;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.formy form select{
+	min-width: 250px;
+	background: lightgray;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.appoint{
+	background: var(--light);
+	padding: 2px;
+	margin: 5px 0;
+	border-radius: 5px;
+	text-align: center;
+}
+.appoint button{
+	text-decoration: none;
+	color: var(--blue);
+	font-size: 15px;
+	font-weight: bold;
+	border: none;
+	background: none;
+}
+
 /*======== RESPONSIVENESS ======*/
 
 @media(max-width: 768px) {
@@ -526,5 +728,11 @@ height: 100vh;
 .im{
 	font-size: 18px;
 }
+
+.aptImage img{
+	max-width: 150px;
+	min-height: 350px;
+}
+
 
 }
