@@ -313,7 +313,7 @@ font-size: 20px;
 
 .solution{
 	background: var(--white);
-  padding: 80px 20px;
+  padding: 80px 10px;
 }
 
 .heading .main{
@@ -331,8 +331,8 @@ font-weight: bold;
 	justify-content: center !important;
 }
 .steps div{
-	max-width: 250px;
-	margin: 20px;
+	max-width: 350px;
+	margin: 20px 5px;
 box-shadow: 2px 2px 4px var(--light), -2px -2px 4px var(--light);
 border-radius: 5px;
 transition: .5s;
@@ -603,6 +603,7 @@ display: flex;
 	justify-content: center !important;
 	position: absolute;
 	top: 0;
+	left: 0;
 }
 
 .formy{
@@ -730,7 +731,7 @@ height: 100vh;
 }
 
 .teamlead, .slide{
-	padding: 10px;
+	padding: 0;
 }
 
 .aptImage img{
