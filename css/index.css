@@ -622,7 +622,7 @@ border-radius: 10px;
 	margin: 10px;
 }
 .aptUs span{
-	font-size: 20px;
+	font-size: 15px;
 	color: var(--dark);
 	font-weight: bolder;
 	margin: 10px 0;
@@ -635,7 +635,7 @@ border-radius: 10px;
 }
 
 .formy form input {
-	min-width: 250px;
+	max-width: 170px;
 	background: lightgray;
 	border: none;
 	border-radius: 5px;
@@ -643,7 +643,7 @@ border-radius: 10px;
 }
 
 .formy form select{
-	min-width: 250px;
+	max-width: 170px;
 	background: lightgray;
 	border: none;
 	border-radius: 5px;
@@ -729,10 +729,19 @@ height: 100vh;
 	font-size: 18px;
 }
 
+.teamlead, .slide{
+	padding: 10px;
+}
+
 .aptImage img{
 	max-width: 150px;
 	min-height: 350px;
 }
 
-
+.aptC span{
+	font-size: 10px;
+}
+.aptSubH{
+	font-size: 15px;
+}
 }
