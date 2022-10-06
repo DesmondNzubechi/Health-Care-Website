@@ -552,6 +552,9 @@ justify-content: center;
 }
 /*============ OUR_TEAM CLASS END ===========*/
 
+/*================BOOK APPOINTMENT START===========*/
+
+
 .aptH{
 	font-size: 25px;
 	font-weight: bolder;
@@ -666,6 +669,165 @@ border-radius: 10px;
 	border: none;
 	background: none;
 }
+
+/*================BOOK APPOINTMENT END===========*/
+
+/*============ REVIEWS CLASS END ===========*/
+
+.reviews{
+	background: var(--white);
+	padding: 0 30px;
+}
+
+.rvMainH{
+	color: var(--blue);
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.rvSubH{
+	color: var(--dark);
+	font-size: 25px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.rv{
+	display: flex !important;
+	justify-content: space-around !important;
+	align-items: center !important;
+}
+.rvP{
+	
+	margin: 20px 5px;
+	display: flex;
+	align-items: center;
+	box-shadow: 2px 2px 5px var(--light), -2px -2px 5px var(--light);
+	border-radius: 10px;
+	padding: 5px;
+}
+.rvP img{
+	width: 70px;
+	height: 70px;
+	background: var(--blue);
+	border-radius: 50%;
+	justify-self: flex-start;
+}
+.rvName{
+	margin: 0 30px;
+	text-align: center;
+}
+
+.rvN{
+	font-size:20px ;
+	font-weight: bold;
+	color: var(--dark);
+}
+.rvS{
+	font-size: 15px;
+	color: var(--gray);
+}
+.pRevH{
+	display: flex;
+	margin: 20px 0;
+	text-align: center !important;
+}
+.pEx{
+	justify-self: flex-start;
+	text-align: center;
+}
+.pEx strong{
+	font-size: 19px;
+}
+.pEx i{
+	color: var(--blue);
+}
+.pQu{
+	justify-self: flex-end;
+	margin-left: 10%;
+}
+.pQu i{
+	font-size: 50px;
+	color: var(--light);
+}
+
+.pMainRev{
+	font-size: 18px;
+	font-weight: 560;
+	color: var(--gray);
+}
+/*============ REVIEWS CLASS START===========*/
+
+/*============ FAQ CLASS START===========*/
+.FAQ{
+	background: var(--white);
+	padding: 60px 25px;
+}
+.FaqH{
+	margin: 10px 0;
+}
+
+.FaqMainH{
+	font-size: 40px;
+	color: var(--blue);
+	font-weight: bold;
+}
+.FaqSubH{
+	font-size: 20px;
+	color: var(--dark);
+	font-weight: bold;
+}
+.faQ{
+	border-bottom: 1px solid var(--blue);
+	/*border-bottom: 1px solid var(--blue);*/
+	padding: 5px;
+}
+
+.faq{
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+.question{
+	font-size: 17px;
+	color: var(--dark);
+	font-weight: bold;
+	position: relative;
+	cursor: pointer;
+}
+.plus{
+	
+	font-size: ;
+	color: var(--blue);
+	border-radius: 100%;
+position: absolute;
+top: 0;
+right: 0;
+}
+
+.minus{
+background: var(--blue);
+	color: var(--white);
+}
+.answer{
+	font-size: 15px;
+	font-weight: 580;
+	color: var(--gray);
+	display: none;
+}
+.faqImg{
+padding-top:35px ;
+}
+.faqImg div {
+	background: var(--light);
+	border-radius: 10px;
+	position: relative;
+	max-width: 400px;
+
+}
+
+.faqImg div img{
+}
+/*============ FAQ CLASS END===========*/
 
 /*======== RESPONSIVENESS ======*/
 
