@@ -75,6 +75,27 @@ abt.addEventListener('mouseout', () => {
 	let up = document.querySelector('#upp');
 	up.style.display = 'none';
 
+});
+
+/*
+
+let logIn = document.querySelector('.login');
+let signUp = document.querySelector('.signUp');
+let logInView = document.querySelector('.logInView');
+let signUpView = document.querySelector('.signUpView');
+let log = document.querySelector('.log');
+let sign = document.querySelector('.sign');
+
+log.addEventListener('click', () => {
+signUp.style.display = 'none';
+logIn.style.display = 'block';
+});
+
+sign.addEventListener('click', () => {
+signUp.style.display = 'block';
+logIn.style.display = 'none';
 })
+*/
+
 
 

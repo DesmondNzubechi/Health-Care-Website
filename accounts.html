@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--=========== MY CSS LINK START =============-->
+
+	<link rel="stylesheet" type="text/css" href="css/accounts.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	
+<!--=========== MY CSS LINK END =============-->
+<!--=========== BOOTSRAP LINK START =============-->
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--=========== BOOTSRAP LINK END =============-->
+	<!--============ FONT AWESOME CSS LINK START ============-->
+
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+
+<!--============ FONT AWESOME CSS LINK END ============-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Log In Here</title>
+</head>
+<body>
+	<header>
+	<!--logo-->
+	<div class="logo">
+		<a href="index.html"><i class="fa-solid fa-notes-medical"></i>Healthy</a>
+	</div>
+
+	<!--nav links-->
+	<div class="links">
+		<ul> <li><a href="index.html">Home</a></li> 
+			<li class="drop"><a class="subnav">Services </a><i class="fa-sharp fa-solid fa-caret-down" id="down"></i> <i class="fa-sharp fa-solid fa-caret-up" id="up"></i>
+				<ul class="drp">
+					<li><a href="#">< Immunisation</a></li>
+					<li><a href="#">< Immunisation</a></li>
+					<li><a href="#">< Immunisation</a></li>
+					<li><a href="#">< Immunisation</a></li>
+					<li><a href="#">< Immunisation</a></li>
+				</ul></li> 
+				<li><a href="">About</a></li>
+			<li class="drop abt"><a class="subnav">Our Team</a> <i class="fa-sharp fa-solid fa-caret-down" id="downn"></i> <i class="fa-sharp fa-solid fa-caret-up" id="upp"></i>
+      <ul class="sub">
+      	<li><a href="#">< General Team</a></li>
+		<li><a href="#">< Our Doctors</a></li>
+		<li><a href="#">< Our Nurses</a></li>
+		<li><a href="#">< Our Staff</a></li>
+      </ul>
+			</li>
+			<li><a href="#">Contact</a></li></ul>
+	</div>
+
+<!--accounts-->
+	<div class="acct">
+		<li class="ac">Account <i class="fa-solid fa-user"></i></li>
+		<ul class="users">
+			<!--<li><a href="#">Login</a></li>-->
+			<li><a href="accounts.html">Sign Up</a></li>
+		</ul>
+	</div>
+
+	<div class="bars">
+		<i id="open" class="fa-solid fa-bars"></i>
+		<i id="close" class="fa-regular fa-x"></i>
+	</div>
+
+</header>
+
+	<!--=========== HEADER END =============-->
+<!--================= LOGIN AND SIGNUP FORM START ==================-->
+<!--login form-->
+<div class="logIn">
+	
+		<div class="login">
+		<p class="logInMainH">Log In Here</p>
+	<form class="logInForm">
+		
+		<div>
+		<label class="lab"><i class="fa-solid fa-envelope"></i> Email Address</label>
+		<input type="email" class="logInE" placeholder="Input Your Email" name="">
+	</div>
+	<div>
+		<label class="lab"><i class="fa-solid fa-lock"></i> Password</label>
+		<input type="password" class="logInP" placeholder="Input Password" name="">
+	</div>
+		<div class="check">
+		<input type="checkbox" class="logInC" name=""><label class="checkboxL">Show password</label>
+	</div>
+	<button type="submit" class="logInSubmit">Log in</button>
+	
+	</form>
+	<p class="stat">Don't Have An Account Yet? <a href="#" class="signUpView">Sign Up Here</a></p>
+		</div>
+	
+
+
+
+<div class="signUp">
+	<p class="signUpH">
+		Sign Up Here
+	</p>
+	<form class="logInForm">
+			<div>
+			<label class="lab"><i class="fa-solid fa-user"></i> Full Name</label>
+		<input type="text" class="logInE" placeholder="Full Name" name="">
+		<div>
+			
+			<label class="lab"><i class="fa-solid fa-phone"></i> Mobile No</label>
+		<input type="number" class="logInE" placeholder="Mobile" name="">
+		</div>
+		<div>
+		<label class="lab"><i class="fa-solid fa-envelope"></i> Email Address</label>
+		<input type="email" class="logInE" placeholder="e.g name@mail.co" name="">
+	</div>
+	<div>
+		<label class="lab"><i class="fa-solid fa-unlock"></i> Password</label>
+		<input type="password" class="logInP" placeholder="Input Password" name="">
+	</div>
+	<div>
+		<label class="lab"><i class="fa-solid fa-lock"></i> Confirm Password</label>
+		<input type="password" class="logInP" placeholder="Confirm Password" name="">
+	</div>
+		<div class="check">
+		<input type="checkbox" class="logInC" name=""><label class="checkboxL">Show password</label>
+	</div>
+	<button type="submit" class="logInSubmit">Sign Up</button>
+	
+	</form>
+	<p class="stat">Already Have Account? <a href="#" class="logInView">Login Here</a></p>
+</div>
+</div>
+</div>
+
+<!--================= LOGIN AND SIGNUP FORM END ==================-->
+<!--================= FOOTER START ==================-->
+<footer class="accF">
+	<div class="row foot ">
+		<div class="col-lg-4 col-md-4 col-sm-12 descrip">
+			<p class="descripMainH">MyHealthCare</p>
+			<p class="descripSubH">MyHealthCare Is an adminitrative support entry and clinical service</p>
+      <div class="soc">
+      	<i class="fa-brands fa-linkedin-in"></i>
+      	<i class="fa-brands fa-twitter"></i>
+      	<i class="fa-brands fa-facebook"></i>
+      </div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 importantL">
+			<p>Important Links</p>
+			<div>
+				<a href="#">Home</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">About</a>
+				<a href="#">Team</a>
+			</div>
+
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 subscribe">
+			<p>
+				Subscribe To Our Newsletter
+			</p>
+			<div>
+				<form>
+				<input type="email" name="email" placeholder="Email Address"><button type="submit" class="newsLBt">Subscribe Now</button>
+			</div>
+		</div>
+	</div>
+	<div class="text-center copy">
+		<p>&copy; MyHealth 2022 All Right Reserved.</p>
+	</div>
+</footer>
+<!--================= FOOTER END ==================-->
+<script type="text/javascript" src="javascript/accounts.js"></script>
+
+<script type="text/javascript" src="javascript/index.js"></script>
+</body>
+</html>

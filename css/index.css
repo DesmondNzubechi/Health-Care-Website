@@ -21,6 +21,7 @@
 	--light: #E5EFFB;
 	--gray: #7F7F7F;
 	--white: #ffffff;
+	--cloud: #ecf0f1;
 }
 
 .darkTheme{
@@ -47,7 +48,7 @@ header{
 	width: 100%;
 	padding:30px 10px ;
 	background: var(--light);
-	box-shadow: 0 0 5px var(--white);
+	/*box-shadow: 0 0 5px var(--white);*/
 	z-index: 999;
 }
 
@@ -141,14 +142,19 @@ header{
 	font-weight: 600;
 	padding: 0 !important;
 	list-style: none;
+
 }
 
 .users{
-	margin: 10px 0;
+	padding: 10px ;
+	min-width: 120px;
+	border-radius: 5px;
 	display:none;
 	justify-content: center;
 	transition: 1s;
 	position: fixed;
+	background: var(--blue);
+
 
 }
 .users a{
@@ -489,14 +495,14 @@ display: flex;
 }
 .teamlead > div{
 	text-align: center;
-	box-shadow: 2px 2px 4px var(--light), -0px -0px 0px var(--gray);
+	box-shadow: 2px 2px 4px var(--cloud), -0px -0px 0px var(--blue);
 	border-radius: 7px;
 	padding: 0 !important;
 	margin-bottom: 30px;
 
 }
 .doc-img{
-background: linear-gradient(var(--light), var(--gray));
+background: linear-gradient(var(--blue), var(--blue));
 margin: 0 !important;
 padding: 0 !important;
 display: flex;
@@ -548,7 +554,7 @@ justify-content: center;
 	font-size: ;
 }
 .rating i{
-	color:yellow;
+	color:var(--dark);
 }
 /*============ OUR_TEAM CLASS END ===========*/
 
@@ -640,7 +646,7 @@ border-radius: 10px;
 
 .formy form input {
 	max-width: 170px;
-	background: lightgray;
+	background: var(--cloud);
 	border: none;
 	border-radius: 5px;
 	padding: 5px;
@@ -648,18 +654,19 @@ border-radius: 10px;
 
 .formy form select{
 	max-width: 170px;
-	background: lightgray;
+	background: var(--cloud);
 	border: none;
 	border-radius: 5px;
 	padding: 5px;
 }
 
 .appoint{
-	background: var(--light);
-	padding: 2px;
-	margin: 5px 0;
-	border-radius: 5px;
-	text-align: center;
+	
+}
+.appoint button:hover{
+	background: var(--blue);
+	color: var(--white);
+	transition: 1s;
 }
 .appoint button{
 	text-decoration: none;
@@ -667,7 +674,12 @@ border-radius: 10px;
 	font-size: 15px;
 	font-weight: bold;
 	border: none;
-	background: none;
+	background: var(--light);
+	padding: 5px 2px;
+	margin: 5px 0;
+	border-radius: 5px;
+	text-align: center;
+	width: 100%;
 }
 
 /*================BOOK APPOINTMENT END===========*/
@@ -701,9 +713,12 @@ border-radius: 10px;
 	margin: 20px 5px;
 	display: flex;
 	align-items: center;
-	box-shadow: 2px 2px 5px var(--light), -2px -2px 5px var(--light);
+	
 	border-radius: 10px;
 	padding: 5px;
+}
+.rvP-active{
+box-shadow: 2px 2px 5px var(--light), -2px -2px 5px var(--light);
 }
 .rvP img{
 	width: 70px;
@@ -828,6 +843,92 @@ padding-top:35px ;
 .faqImg div img{
 }
 /*============ FAQ CLASS END===========*/
+
+/*============ FOOTER START===========*/
+.foot{
+	padding: 20px;
+
+}
+.descrip{
+	padding: 20px;
+	max-width: 250px;
+}
+.descripMainH{
+	font-size: 25px;
+	color: var(--blue);
+	font-weight: bold;
+}
+.descripSubH{
+	font-size: 18px;
+	color: var(--dark);
+	font-weight: 560;
+}
+.soc i{
+	font-size: 20px;
+	background: var(--white);
+	border-radius: 50%;
+	padding: 10px;
+	border: 0.1px solid var(--blue);
+	margin-right:10px ;
+}
+.importantL{
+	padding: 20px;
+}
+.importantL p{
+	font-size: 25px;
+	color: var(--dark);
+	font-weight: bold;
+}
+.importantL  div a{
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	color: var(--gray);
+	margin: 5px 0;
+	font-weight: 570;
+}
+.subscribe{
+	padding: 20px;
+}
+.subscribe p{
+	font-size: 25px;
+	font-weight: bold;
+}
+.subscribe div form{
+	display: block;
+	justify-content: center;
+}
+.subscribe form input{
+	display: block;
+	min-width: 300px;
+	max-width: 500px;
+	background: var(--white);
+	border:solid 2px var(--cloud);
+	padding: 15px;
+	color: var(--dark);
+	border-radius: 10px;
+	margin: 15px 0;
+	text-align: center;
+	font-size: 20px;
+}
+.subscribe form button{
+	min-width: 300px;
+	max-width: 500px;
+	border: none;
+	background: var(--blue);
+	text-align: center;
+	color: var(--white);
+	padding: 5px;
+	font-size: 20px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+.copy p{
+	font-size: 17px;
+	margin: 20px;
+	color: var(--dark);
+}
+/*============ FOOTER END===========*/
 
 /*======== RESPONSIVENESS ======*/
 

@@ -14,6 +14,7 @@
 <!--=========== MY CSS LINK START =============-->
 
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	
 <!--=========== MY CSS LINK END =============-->
 
 	<!--============ FONT AWESOME CSS LINK START ============-->
@@ -34,12 +35,12 @@
 <header>
 	<!--logo-->
 	<div class="logo">
-		<a href="index.html">Healthy</a>
+		<a href="index.html"><i class="fa-solid fa-notes-medical"></i>Healthy</a>
 	</div>
 
 	<!--nav links-->
 	<div class="links">
-		<ul> <li><a href="#">Home</a></li> 
+		<ul> <li><a href="index.html">Home</a></li> 
 			<li class="drop"><a class="subnav">Services </a><i class="fa-sharp fa-solid fa-caret-down" id="down"></i> <i class="fa-sharp fa-solid fa-caret-up" id="up"></i>
 				<ul class="drp">
 					<li><a href="#">< Immunisation</a></li>
@@ -65,8 +66,8 @@
 	<div class="acct">
 		<li class="ac">Account <i class="fa-solid fa-user"></i></li>
 		<ul class="users">
-			<li><a href="#">Login</a></li>
-			<li><a href="#">Sign Up</a></li>
+			<li><a href="accounts.html" class="log">Login</a></li>
+			<li><a href="accounts.html" class="sign">Sign Up</a></li>
 		</ul>
 	</div>
 
@@ -361,7 +362,7 @@
   			</select>
   		</div>
   		<div class="appoint">
-  			<button href="#">Book Appointment</button>
+  			<button  href="#">Book Appointment</button>
   		</div>
   		</form>
   	</div>
@@ -381,7 +382,7 @@
 		</div>
 		<div class="row container-fluid rv">
 		<div class="col-lg-4">
-			<div class="rvP ">
+			<div class="rvP rvP-active">
 				<img src="images/doct.png">
 				<span class="rvName">
 				<span class="rvN">Michael Afolabi</span><br>
@@ -467,12 +468,49 @@
 </div>
 <!--================= FAQ END ==================-->
 
+
+
+<!--================= LOGIN AND SIGNUP FORM START ==================-->
+
+<!--================= LOGIN AND SIGNUP FORM END ==================-->
+
+
+
 <!--================= FOOTER START ==================-->
 <footer>
-	<div>
-		<div>
-			<p>MyHealthCare</p>
+	<div class="row foot">
+		<div class="col-lg-4 col-md-4 col-sm-12 descrip">
+			<p class="descripMainH">MyHealthCare</p>
+			<p class="descripSubH">MyHealthCare Is an adminitrative support entry and clinical service</p>
+      <div class="soc">
+      	<i class="fa-brands fa-linkedin-in"></i>
+      	<i class="fa-brands fa-twitter"></i>
+      	<i class="fa-brands fa-facebook"></i>
+      </div>
 		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 importantL">
+			<p>Important Links</p>
+			<div>
+				<a href="#">Home</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">About</a>
+				<a href="#">Team</a>
+			</div>
+
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 subscribe">
+			<p>
+				Subscribe To Our Newsletter
+			</p>
+			<div>
+				<form>
+				<input type="email" name="email" placeholder="Email Address">
+				<button type="submit" class="newsLBt">Subscribe Now</button>
+			</div>
+		</div>
+	</div>
+	<div class="text-center copy">
+		<p>&copy; MyHealth 2022 All Right Reserved.</p>
 	</div>
 </footer>
 <!--================= FOOTER END ==================-->

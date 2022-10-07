@@ -1,0 +1,134 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+/* GOOGLE FONTS END */
+
+/*=========== GENERAL STYLING  START  ===========*/
+
+
+*{
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+:root{
+	--blue: #0061ff;
+	--dark: #25282B;
+	--light: #E5EFFB;
+	--gray: #7F7F7F;
+	--white: #ffffff;
+	--cloud: #ecf0f1;
+}
+
+
+
+/*========LOG IN FORM STYLING==========*/
+
+.logIn{
+	background: var(--dark);
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 120px;
+	min-height: 100vh;
+	padding-bottom: 20px;
+
+}
+.logIn > div{
+	background: var(--white);
+	padding: 20px;
+	min-width:300px ;
+	border-radius: 5px;
+	height: fit-content;
+
+}
+.logInForm{
+	background: var(--white);
+}
+.logInMainH{
+	font-size: 25px;
+	font-weight: bold;
+	color: var(--blue);
+	text-transform: uppercase;
+}
+.logInForm div{
+	margin: 20px 0;
+}
+.logInForm div .lab{
+	display: block;
+	font-size: 20px;
+	margin: 5px 0;
+	font-weight: 570;
+	color: var(--gray);
+}
+.lab i{
+	
+	padding: 2px;
+	border-radius: 20%;
+	color: var(--blue);
+}
+.signUpH{
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--blue);
+	text-transform: uppercase;
+}
+.logInForm .logInE, .logInForm .logInP{
+	width: 100%;
+	border: none;
+	background: var(--light);
+	padding: 5px 0;
+	font-weight: 580;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 4px;
+}
+.check .checkboxL{
+margin-bottom: -5px;
+font-size: 15px;
+font-weight: bold;
+margin-left: 10px;
+}
+.logInC{
+	border-radius: 50%;
+	font-size: 50px;
+}
+
+.logInSubmit{
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	background: var(--blue);
+	font-size: 20px;
+	justify-content: center;
+	text-align: center;
+	font-weight: bold;
+	color: var(--white);
+	padding: 5px;
+	text-transform: uppercase;
+}
+
+.stat{
+	margin: 20px 0;
+	font-size: 15px;
+	font-weight: bold;
+}
+.stat a{
+	text-decoration: none;
+	display: block;
+	color: var(--blue);
+	
+	margin: 10px;
+	text-transform: uppercase;
+
+}
+.login{
+	display: none;
+}
+.accF{
+	background: var(--light);
+}
