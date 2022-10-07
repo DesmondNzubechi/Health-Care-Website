@@ -97,5 +97,35 @@ logIn.style.display = 'none';
 })
 */
 
+let question = document.querySelectorAll('.faQ');
+let answer = document.querySelectorAll('.answer'); 
+
+
+question.forEach(q => {
+	q.addEventListener('click', (e) => {
+ /*let getPlus = e.target.children.querySelectorAll('.plus');
+ getPlus.forEach*/
+		let getParent = e.target.parentElement;
+		let answer = getParent.querySelectorAll('.answer'); 
+		answer.forEach(ans => {
+			if (ans.style.display === 'block' ) {
+				ans.style.display = 'none'
+			} else {
+				ans.style.display = 'block'
+			};
+		});
+
+		/*console.log(getParent);
+		console.log(getParent.children[1])
+		let getAnswer = getParent.children[1];
+		getAnswer.style.display = 'inline-block';
+		if (getAnswer) {
+			getAnswer.style.display = 'none';
+		} else {
+			getAnswer.style.display = 'inline-block';
+
+		};*/
+	});
+});
 
 
