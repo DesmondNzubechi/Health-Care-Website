@@ -4,7 +4,6 @@ let navLinks = document.querySelector('.links');
 let dropdownLinks = document.querySelectorAll('.dropdownLinks');
 let dropdown = document.querySelectorAll('.dropdown');
 
-
 open.addEventListener('click', (e) => {
 console.log(e.target.parentElement)
 

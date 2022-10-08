@@ -1,0 +1,208 @@
+/* GOOGLE FONTS START */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+/* GOOGLE FONTS END */
+
+/*=========== GENERAL STYLING  START  ===========*/
+
+
+*{
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+:root{
+	--blue: #0061ff;
+	--dark: #25282B;
+	--light: #E5EFFB;
+	--gray: #7F7F7F;
+	--white: #ffffff;
+	--cloud: #ecf0f1;
+}
+
+.darkTheme{
+
+}
+
+/*=========== GENERAL STYLING  END  ===========*/
+
+.main{
+	padding: 100px 15px;
+	background: var(--white);
+}
+
+.topV p{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.imm{
+	margin-top: 70px;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center;
+}
+
+
+.immT > p{
+	font-size: 20px;
+	color: var(--gray);
+}
+
+.immI{
+	background: linear-gradient(var(--blue), var(--light), var(--white));
+
+	border-radius: 20px;
+	padding: 0;
+	margin: 20px;
+	position: relative;
+}
+
+
+/*=========PATIENTS FORM START===========*/
+
+.patientForm{
+	position: fixed;
+	top:-1000px;
+	left: 0;
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.5);
+	padding-top: 10px;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	transition: 1s;
+	
+}
+.formY{
+	background: var(--blue);
+	padding: 20px;
+	border-radius: 10px;
+	height: fit-content;
+	margin-top: 50px;
+	position: relative;
+	
+}
+.formYH p{
+	font-size: 15px;
+	font-weight: bolder;
+	color: var(--white);
+	margin: 10px 0;
+	color: var(--dark);
+}
+.formY > div{
+	margin: 10px 0;
+}
+.formY label{
+	display: block;
+	font-size: 20px;
+	font-weight: 560;
+
+}
+.formY input{
+	background: var(--white);
+	padding: 5px;
+	font-size: 15px;
+	text-align: center;
+	border: 2px solid var(--light);
+	border-radius: 5px;
+	width: 100%;
+}
+.formY select{
+	width: 100%;
+	background: var(--light);
+	padding: 5px;
+	border-radius: 5px;
+	border: 2px solid var(--white);
+}
+.subM{
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+	color: var(--blue);
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.subM:hover{
+	background: var(--blue);
+	border: 1px solid var(--cloud);
+	transition: .3s;
+	color: var(--white);
+
+}
+#closeForm{
+	position: absolute;
+	top: 5px;
+	font-size: 25px;
+	right: 5px;
+	color: var(--light);
+}
+#closeForm:hover{
+	color: red;
+	transition: 1s;
+}
+
+/*=======PATIENT FORM END===========*/
+
+
+/*========PATIENT FORM REGISTRATION STATUS=====*/
+
+.patientFormReg{
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+
+
+}
+.patientFormRegStatSuccess {
+	margin: 20px;
+	background: lightgreen;
+	min-height: 100px;
+	border-radius: 10px;
+	padding: 30px;
+	position: fixed;
+	top: -1000px;
+	z-index: 1002;
+	transition: 1s;
+}
+
+.patientFormRegStatFailed {
+	margin: 20px;
+	background: red;
+	min-height: 100px;
+	border-radius: 10px;
+	padding: 30px;
+	position: fixed;
+	top: -1000px;
+	z-index: 1002;
+	transition: 1s;
+}
+
+.sta{
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--dark);
+}
+
+#suc{
+	padding: 10px;
+	font-size: 50px;
+	color: var(--white);
+	
+}
+
+#unsuc{
+	background: var(--light);
+	padding: 10px;
+	font-size: 50px;
+	border-radius: 50%;
+	color: red;
+}
