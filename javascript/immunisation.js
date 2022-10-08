@@ -67,7 +67,7 @@ function renderForm(argument) {
                 
 			</div>
 			<div>
-				<button type="submit" class="subM">Submit </button>
+				<button type="button" class="subM">Submit </button>
 			</div>
 		</form>`;
 
