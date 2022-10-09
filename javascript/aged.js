@@ -2,39 +2,49 @@
 
 //Contents on immunisation page
 let servicesPageContent = [
- {
+ /*{
  	immHeading: 'IMMUNISATION',
  	immContent: `Vaccination is a vital part of preventive medicine, 
  	from new born babies through to adulthood. At our practices we have
  	 multiple immunisation practitioner nurses, who together with our doctors
  	  provide this service to our patients.`,
  	immBook: 'Book Now',
- 	immImage: 'images/immuniseBg.png',
+ 	immImage: 'images/immuniseBg.png'
  },
+ */
+  {
+  	tVHeading: 'AGED CARE',
+ 	tVContent: `We lead the way in aged care, providing specialised 
+ 	medical care for people over 65 years for issues including dementia,
+ 	 falls, continence problems and rheumatology.`,
+ 	tVBook: 'Book Now',
+ 	tVImage: 'images/AgedC.png',
+  },
 ];
 
 ///rendering immunisaton content to its html page 
-let immunisationVaccine = document.querySelector('.immuneV');
+let mainMenu = document.querySelector('.travelVaccine');
 function renderImmunisation() {
 
 	 servicesPageContent.forEach(content => {
-		immunisationVaccine.innerHTML += `<div>
+		mainMenu.innerHTML += `<div>
 		<div class="row imm">
 			<div class="immT col-lg-5 col-md-6 col-sm-12">
 				<div class="topV">
-			<p>${content.immHeading}</p>
+			<p>${content.tVHeading}</p>
 		</div>
 				<p>
-					${content.immContent}</p>
+					${content.tVContent}</p>
 				<p class="bt">
-		<a href="#" class="bookNow">${content.immBook} >></a>
+		<a href="#" class="bookNow">${content.tVBook} >></a>
 	</p>
 			</div>
 			<div class="immI col-lg-5 col-md-6 col-sm-12">
-				<img src="${content.immImage}" class="img-fluid">
+				<img src="${content.tVImage}" class="img-fluid">
 			</div>
 		</div>
-	</div>`;
+	</div>`
+
 	});
 };
 renderImmunisation();
@@ -65,7 +75,7 @@ function renderForm(argument) {
 			<div>
 				<label>*Booking For</label>
 				<select disabled>
-               <option  value="Travel Vaccination">Travel Vaccination</option> 
+               <option  value="Aged Care">AGED CARE</option> 
            </select>
                 
 			</div>

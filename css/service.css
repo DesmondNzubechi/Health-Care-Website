@@ -31,7 +31,7 @@
 /*=========== GENERAL STYLING  END  ===========*/
 
 .main{
-	padding: 100px 15px;
+	padding: 100px 40px;
 	background: var(--white);
 }
 
@@ -54,14 +54,18 @@
 }
 
 .immI{
-	background: linear-gradient(var(--blue), var(--light), var(--white));
-
+	
 	border-radius: 20px;
 	padding: 0;
+	width: fit-content;
 	margin: 20px;
 	position: relative;
 }
+.travelVaccine .immI{
+	background: linear-gradient(var(--white), var(--white), var(--white), var(--blue), var(--blue));
+	border-radius: 0 0 100% 100%;
 
+}
 
 /*=========PATIENTS FORM START===========*/
 

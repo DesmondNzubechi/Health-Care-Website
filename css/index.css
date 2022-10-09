@@ -197,7 +197,9 @@ header{
 	justify-content: space-around !important;
 	align-items: center;
 	margin-top: 100px;
+	margin-right: 0 !important;
 	padding: 10px 30px !important;
+	
 }
 .welcom{
 	margin-top: 50px;
@@ -228,7 +230,7 @@ font-weight: 550;
 }
 .dc{
 	position: relative;
-	z-index: -1 !important;
+	z-index: 0 !important;
 	z-index: 0;
 }
 .img{
@@ -253,6 +255,7 @@ font-weight: 550;
 	background: var(--white);
 	padding: 5px 20px;
 	border-radius: 5px;
+	box-shadow: 2px 2px 5px var(--light), -2px -2px 5px var(--cloud);
 
 }
 .serve i{
@@ -286,6 +289,8 @@ font-size: 20px;
 	bottom: 30px;
 	padding: 5px 20px;
 	border-radius: 10px;
+	box-shadow: 2px 2px 5px var(--light), -2px -2px 5px var(--cloud);
+
 }
 .prove > span{
 	display: block;
