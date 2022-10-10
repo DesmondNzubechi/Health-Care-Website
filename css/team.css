@@ -196,6 +196,10 @@ font-weight: bold;
 	justify-content: center !important;
 	align-items: center !important;
 }
+.drImage{
+	display: flex;
+	justify-content: center;
+}
 .drImage img{
 	margin: 20px;
 	box-shadow: 2px 2px 10px lightgray, -10px -20px 0px var(--blue);
