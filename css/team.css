@@ -1,0 +1,197 @@
+/* GOOGLE FONTS START */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+/* GOOGLE FONTS END */
+
+/*=========== GENERAL STYLING  START  ===========*/
+
+
+*{
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+:root{
+	--blue: #0061ff;
+	--dark: #25282B;
+	--light: #E5EFFB;
+	--gray: #7F7F7F;
+	--white: #ffffff;
+	--cloud: #ecf0f1;
+}
+
+.darkTheme{
+
+}
+
+/*=========== GENERAL STYLING  END  ===========*/
+
+/*============ OUR_TEAM CLASS START ===========*/
+.our-team{
+	background: var(--white);
+	padding: 40px 60px;
+	margin-top: 100px;
+}
+
+.pro{
+	font-size: 20px;
+	color: var(--blue);
+	font-weight: bold;
+	margin: 30px;
+}
+
+.meet{
+	color: var(--dark);
+	font-size: 30px;
+	font-weight: bolder;
+}
+.slide{
+	padding: 10px 20px;
+}
+.teamlead{
+	padding: 5px 20px;
+}
+.teamlead > div{
+	text-align: center;
+	box-shadow: 2px 2px 10px lightgray, -20px -10px 0px var(--blue);
+	border-radius: 10px;
+	padding: 0 !important;
+	margin-bottom: 50px;
+	
+
+}
+.doc-img{
+display: flex;
+justify-content: center;
+
+
+
+}
+.doc-img img{
+	max-width: 100px;
+	height: 100px;
+	background: linear-gradient(var(--blue), var(--blue));
+margin-top: 5px;
+padding: 0 !important;
+border-radius: 50%;
+}
+.doc-img img:hover{
+	background: linear-gradient(var(--light), var(--cloud));
+	transition: 2s;
+}
+.team-bio span{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 3px 0;
+
+}
+.nn{
+	padding-top: 5px;
+}
+.namE{
+	font-size: 18px;
+	font-weight: 500;
+	padding: 2px 8px;
+}
+.specialty{
+	font-size: 15px;
+	background: var(--light);
+	color: var(--blue);
+	font-weight: 550;
+	padding: 2px 8px;
+	border-radius: 5px;
+}
+
+.patientS{
+	font-size: 15px;
+	
+	color: var(--dark);
+	font-weight: 550;
+	padding: 2px 8px;
+	border-radius: 5px;
+}
+.rating{
+	font-size: 15px;
+	color: var(--dark);
+	padding: 2px 8px;
+	font-weight: 550;
+	font-size: ;
+}
+.rating i{
+	color:var(--dark);
+}
+.viewProfile{
+	
+	background: linear-gradient(var(--light), var(--light), var(--light));
+	padding: 10px;
+	margin-bottom: 0 !important;
+
+
+}
+.viewProfile:hover{
+	background: var(--blue);
+	transition: 1s;
+}
+.viewProfile a{
+text-decoration: none;
+font-size: 20px;
+color: var(--dark);
+font-weight: bold;
+}
+/*============ OUR_TEAM CLASS END ===========*/
+
+
+
+/*============DOCTORS PROFILE START============*/
+
+.profile{
+	padding: 40px 20px;
+	margin-top:100px ;
+	background: var(--white);
+}
+.drName{
+	
+	font-size: 25px !important;
+	font-weight: bolder;
+	color: var(--dark) !important;
+
+}
+
+.dr{
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+.drImage img{
+	margin: 20px;
+	box-shadow: 2px 2px 10px lightgray, -10px -20px 0px var(--blue);
+	border-radius: 5px;
+	background: var(--white);
+
+}
+.drImage img:hover{
+	background: var(--blue);
+	box-shadow: 2px 2px 10px lightgray, -10px -20px 0px var(--dark);
+	transition: 1s;
+	
+
+}
+.drDescript p{
+	font-size: 18px;
+	color: var(--gray);
+}
+.drSoc i{
+font-size: 25px;
+color: var(--dark);
+margin: 5px;
+}
+
+.drSoc i:hover{
+	color: var(--blue);
+	transition: 1s;
+
+}
