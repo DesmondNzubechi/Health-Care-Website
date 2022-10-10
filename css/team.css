@@ -64,6 +64,31 @@
 	
 
 }
+.teamlead > div:hover{
+	transition: 1s;
+	box-shadow: 2px 2px 10px lightgray, -50px -50px 0px var(--blue);
+	
+}
+
+.nurse{
+	text-align: center;
+	box-shadow: 1px 2px 2px lightgray, -20px -10px 0px var(--light) !important;
+	border-radius: 10px;
+	padding: 0 !important;
+	margin-bottom: 50px;
+}
+.nurse:hover{
+	transition: 1s;
+	box-shadow:  -100px -50px 0px var(--blue), 1px 2px 10px lightgray !important;
+	
+}
+.nurse .doc-img img{
+	background: linear-gradient(var(--light), var(--light));
+}
+.nurse .doc-img img:hover{
+	background: linear-gradient(var(--blue), var(--blue)) !important;
+	transition: 1s;
+}
 .doc-img{
 display: flex;
 justify-content: center;
@@ -129,8 +154,13 @@ border-radius: 50%;
 	background: linear-gradient(var(--light), var(--light), var(--light));
 	padding: 10px;
 	margin-bottom: 0 !important;
-
-
+}
+.nurse .viewProfile{
+	background: var(--blue) !important;
+}
+.nurse .viewProfile:hover{
+	background: var(--light) !important;
+	transition: 1s;
 }
 .viewProfile:hover{
 	background: var(--blue);
@@ -175,7 +205,7 @@ font-weight: bold;
 }
 .drImage img:hover{
 	background: var(--blue);
-	box-shadow: 2px 2px 10px lightgray, -10px -20px 0px var(--dark);
+	box-shadow: 2px 2px 10px lightgray, -50px -30px 0px var(--dark);
 	transition: 1s;
 	
 

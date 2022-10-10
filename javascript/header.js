@@ -23,7 +23,7 @@ function renderHeader(argument) {
       <ul class="sub">
 		<li><a href="Doctors.html">< Our Doctors</a></li>
 		<li><a href="Nurses.html">< Our Nurses</a></li>
-		<li><a href="Management.html">< Our Management</a></li>
+		<!--<li><a href="Management.html">< Our Management</a></li>-->
       </ul>
 			</li>
 			<li><a href="#">Contact</a></li>

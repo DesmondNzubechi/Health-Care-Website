@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+/* GOOGLE FONTS END */
+
+/*=========== GENERAL STYLING  START  ===========*/
+
+
+*{
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+:root{
+	--blue: #0061ff;
+	--dark: #25282B;
+	--light: #E5EFFB;
+	--gray: #7F7F7F;
+	--white: #ffffff;
+	--cloud: #ecf0f1;
+}
+
+/*=========== GENERAL STYLING  END  ===========*/
+
+
+
+/*=============ABOUT STYLING===========*/
+
+.about{
+	margin-top: 100px;
+
+}
+
+.abtt{
+	padding: 20px 30px;
+}
+
+.abtHead{
+	font-size: 25px;
+	color: var(--dark);
+	font-weight: bold;
+}
+
+.abtDes{
+	font-size: 17px;
+	color: var(--dark);
+}
+.abtPics{
+	display: flex;
+	justify-content: center;
+}
+.abtPics img{
+	min-height: 300px;
+	border-radius: 50%;
+	margin: 0 20px;
+	background: linear-gradient(var(--blue),var(--blue),var(--white),var(--white), var(--white));
+}
+.abtSoc{
+	margin: 20px 0;
+}
+.abtSoc i{
+	font-size: 30px;
+	margin: 5px;
+	font-weight: bolder;
+	color: var(--blue);
+}
