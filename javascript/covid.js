@@ -28,5 +28,7 @@ let replaceImg = {image: 'images/covid.jpg'};
 		console.log(err)
 	};
 };
-
-getNewsApi();
+/*
+let body = document.querySelector("body");
+*/
+window.addEventListener('load', getNewsApi())
