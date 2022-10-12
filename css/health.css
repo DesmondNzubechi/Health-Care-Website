@@ -69,6 +69,7 @@
 	text-align: center;
 	border-radius: 5px;
 	margin: 40px 20px;
+	margin-right: 30px;
 	box-shadow: 2px 2px 2px lightgray, -5px -5px 0px var(--light);
 	border: 1px solid var(--light);
 }
