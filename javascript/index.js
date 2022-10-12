@@ -80,6 +80,29 @@ abt.addEventListener('mouseout', () => {
 
 });
 
+//display news sub nav link on hover
+let news = document.querySelector('.news');
+news.addEventListener('mouseover', () => {
+	let subb = document.querySelector('.subb');
+	subb.style.display = 'block';
+	let downnn = document.querySelector('#downnn');
+	downnn.style.display = 'none';
+	let uppp = document.querySelector('#uppp');
+	uppp.style.display = 'inline-flex';
+
+});
+//undisplay news sub nav link on mouse out
+news.addEventListener('mouseout', () => {
+	let subb = document.querySelector('.subb');
+	subb.style.display = 'none';
+	let down = document.querySelector('#downnn');
+	downnn.style.display = 'inline-flex';
+	let uppp = document.querySelector('#uppp');
+	uppp.style.display = 'none';
+
+});
+
+
 //display answer when click on FAQ
 let question = document.querySelectorAll('.faQ');
 let answer = document.querySelectorAll('.answer'); 

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+/* GOOGLE FONTS END */
+
+/*=========== GENERAL STYLING  START  ===========*/
+
+
+*{
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+:root{
+	--blue: #0061ff;
+	--dark: #25282B;
+	--light: #E5EFFB;
+	--gray: #7F7F7F;
+	--white: #ffffff;
+	--cloud: #ecf0f1;
+}
+
+
+/*=========== GENERAL STYLING  END===========*/
+
+.new{
+	padding: 20px;
+	margin: 100px 0;
+	background: var(--white);
+}
+.pp > p{
+
+	margin-top: 40px;
+	padding: 20px;
+	text-align: center;
+	font-size: 20px;
+	box-shadow: 2px 2px 3px lightgray, -2px -2px 20px var(--light);
+	border-radius: 10px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+.pp{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pp > p:hover{
+	background: var(--blue);
+	color: var(--white);
+	transition: 1s;
+	transform: translateY(-10px);
+}
+.healthNews{
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+.healthNews .newS{
+	display: block;
+	position: relative;
+	justify-content: center !important;
+	background: var(--dark);
+	color: var(--white);
+	min-width: fit-content;
+	min-height: 300px !important;
+	padding: 0 !important;
+	text-align: center;
+	border-radius: 5px;
+	margin: 40px 20px;
+	box-shadow: 2px 2px 2px lightgray, -5px -5px 0px var(--light);
+	border: 1px solid var(--light);
+}
+.newS:hover{
+	transition: 1s;
+	border: 1px solid var(--light);
+	box-shadow: 2px 2px 2px lightgray, -10px -10px 0px var(--light);
+	
+}
+.newsImg{
+	min-height: 200px;
+	min-width: 300px;
+	max-height: 300px;
+	max-width: 300px;
+}
+.title{
+	position: absolute;
+	top: 0;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	color: var(--white);
+	padding: 1px;
+	width: 100%;
+	background: rgba(0, 0, 0, .70);
+	text-transform: uppercase;
+	color: var(--light);
+	cursor: pointer;
+}
+.description{
+	position: absolute;
+	bottom: 0;
+	color: var(--white);
+	background: rgba(0, 0, 0, .70);
+	width: 100%;
+	font-size: 12px;
+	font-weight: 570;
+	margin-bottom: 0;
+	cursor: pointer;
+	padding: 1px;
+	padding-bottom: 3px;
+}
+.description:hover{
+	transition: 1s;
+	background: rgba(0, 0, 0, .90);
+}
+.readMore{
+	
+	padding: 2px;
+	width: 100%;
+	text-decoration: none;
+	font-size: 15px;
+	text-align: center !important;
+	font-weight: bold;
+	color: var(--light);
+	background: rgba(0, 0, 0, .7);
+	display: block;
+}
+.readMore:hover{
+	color: var(--blue);
+	transition: 1s;
+}

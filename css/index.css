@@ -125,7 +125,9 @@ header{
 	color:var(--blue) ;
 	transition: .5s;
 }
-
+#uppp{
+	display: none;
+}
 /*user account */
 .acct{
 	align-self: flex-start;

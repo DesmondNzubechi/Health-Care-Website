@@ -26,7 +26,15 @@ function renderHeader(argument) {
 		<!--<li><a href="Management.html">< Our Management</a></li>-->
       </ul>
 			</li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="contact.html">Contact</a></li>
+
+			<li class="drop news"><a class="subnav">News</a> <i class="fa-sharp fa-solid fa-caret-down" id="downnn"></i> <i class="fa-sharp fa-solid fa-caret-up" id="uppp"></i>
+      <ul class="subb">
+		<li><a href="news.html">< Health News</a></li>
+		<li><a href="covid.html">< Covid19 News</a></li>
+		
+      </ul>
+			</li>
 		</ul>
 	</div>
 	
