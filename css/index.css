@@ -198,9 +198,10 @@ header{
 	display: flex !important;
 	justify-content: space-around !important;
 	align-items: center;
-	margin-top: 100px;
+	margin-top: 60px;
 	margin-right: 0 !important;
-	padding: 10px 30px !important;
+	padding: 20px 30px !important;
+	min-height: 100vh;
 	
 }
 .welcom{
@@ -208,16 +209,23 @@ header{
 	
 }
 .l{
-background: var(--blue);
-width: fit-content;
-border-radius: 10px;
+
 }
 .l a{
 	text-decoration: none;
 	font-size: 30px;
 	margin: 10px 15px;
 	color: var(--white);
+	padding: 0 5px;
 	font-weight: bold;
+	background: var(--blue);
+width: fit-content;
+border-radius: 5px;
+}
+.l a:hover{
+	transition: 1s;
+	background:var(--white) ;
+	color: var(--blue);
 }
 .well{
 font-size: 50px;
@@ -239,12 +247,16 @@ font-weight: 550;
 	margin-top: 30px;
 	position: relative;
 
-	background: linear-gradient(var(--blue), var(--light) );
+	background: var(--blue);
 	border-radius: 100%;
+}
+.img:hover{
+	transition: 2s;
+		background: linear-gradient(var(--light),var(--light), var(--blue));
 }
 .img img{
 	width: 100%;
-	height: auto;
+	height: 400px;
 	position:;
 	bottom: 0;
 
@@ -268,7 +280,11 @@ font-weight: 550;
 	font-size: 40px;
 	border-radius: 100%;
 }
-
+.serve i:hover{
+	transition: 1s;
+	color: var(--white);
+	background: var(--blue);
+}
 .serve .two{
 	
 	
@@ -312,12 +328,21 @@ font-size: 20px;
 	background: var(--blue);
 
 }
+.imgF:hover{
+	transition: 1s;
+	background: var(--light);
+}
 .pp span{
 	padding: 5px;
 	font-size: 10px;
 	border-radius: 100%;
 	background: var(--blue);
 	font-weight: bolder;
+	cursor: pointer;
+}
+.pp span:hover{
+	transition: 1s;
+	background: var(--light);
 }
 /*============ WELCOME NOTE END ===========*/
 

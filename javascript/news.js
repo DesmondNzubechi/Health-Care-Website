@@ -8,7 +8,6 @@ let replaceImg = {image: 'images/medicine.jpg'};
 			access_key=73f391e95c48456f79f368e5df4d5e74
 			&categories=health
 			&languages=en
-			&limit=12
 			
 	`)
 		let res = await getNes.json();

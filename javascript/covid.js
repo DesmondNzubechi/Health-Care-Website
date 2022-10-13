@@ -9,7 +9,6 @@ let replaceImg = {image: 'images/covid.jpg'};
 			&categories=health
 			&languages=en
 			&keywords=covid
-			&limit=12
 			
 	`)
 		let res = await getNes.json();
@@ -28,7 +27,5 @@ let replaceImg = {image: 'images/covid.jpg'};
 		console.log(err)
 	};
 };
-/*
-let body = document.querySelector("body");
-*/
-window.addEventListener('load', getNewsApi())
+
+ getNewsApi();
