@@ -133,15 +133,16 @@ function footerRendering() {
       	<i class="fa-brands fa-linkedin-in"></i>
       	<i class="fa-brands fa-twitter"></i>
       	<i class="fa-brands fa-facebook"></i>
+      	<!--<i class="fa-brands fa-instagram"></i>-->
       </div>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-12 importantL">
 			<p>Important Links</p>
 			<div>
-				<a href="#">Home</a>
+				<a href="index.html">Home</a>
 				<a href="#">Privacy Policy</a>
-				<a href="#">About</a>
-				<a href="#">Team</a>
+				<a href="about.html">About</a>
+				<a href="doctors.html">Team</a>
 			</div>
 
 		</div>

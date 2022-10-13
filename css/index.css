@@ -252,7 +252,7 @@ font-weight: 550;
 }
 .img:hover{
 	transition: 2s;
-		background: linear-gradient(var(--light),var(--light), var(--blue));
+		background: linear-gradient(var(--blue), var(--light),var(--light));
 }
 .img img{
 	width: 100%;
@@ -369,15 +369,18 @@ font-weight: bold;
 	justify-content: center !important;
 }
 .steps div{
-	max-width: 350px;
+	max-width: 300px;
 	margin: 20px 5px;
-box-shadow: 2px 2px 4px var(--light), -2px -2px 4px var(--light);
-border-radius: 5px;
+box-shadow: 5px 5px 0px var(--gray), -2px -2px 4px var(--light);
+border-radius: 10px;
 transition: .5s;
 padding: 15px;
+cursor: pointer;
 }
 .steps div:hover {
-box-shadow: 5px 5px 7px var(--light), -5px -5px 7px var(--light);
+	transition: .5s;
+box-shadow: 2px 2px 5px var(--gray), -10px -10px 0px var(--dark);
+background: var(--light);
 border-radius: 10px;
 padding: 15px;
 }
@@ -424,6 +427,11 @@ margin: 20px;
 display: flex;
 	justify-content: center;
 }
+.abtImage:hover{
+	transition: 1s;
+	background: var(--blue);
+	box-shadow: 2px 2px 4px var(--light), -5px -5px 0px var(--dark);
+}
 .abtImage img{
 	max-width: 350px;
 	max-height: 350px;
@@ -444,7 +452,13 @@ display: flex;
 	border-radius: 5px;
 	color: var(--blue);
 	font-weight: 500;
+	cursor: pointer;
 	
+}
+.group > span:hover{
+	transition: 1s;
+	background: var(--light);
+	box-shadow: 2px 2px 4px var(--white), -2px -2px 4px var(--white);
 }
 .group span span{
 	font-weight: 800;
@@ -492,6 +506,14 @@ display: flex;
 	border-radius: 5px;
 	width: fit-content;
 }
+.bt:hover{
+	background: var(--light);
+}
+.bt:hover a{
+	transition: 1s;
+	background: var(--light);
+	color: var(--dark);
+}
 .bt a{
 	text-decoration: none;
 	color: var(--white);
@@ -530,10 +552,10 @@ font-weight: bold;
 }
 .aptL{
 	margin-top: 20px;
-	margin-bottom: 50px;
+	margin-bottom: 10px !important;
 }
 .aptImg{
-	margin-top: -20px;
+	margin-top: 0px;
 	position: relative;
 	z-index: 0 !important;
 	min-height: 500px;
@@ -544,6 +566,10 @@ border-radius: 20px;
 margin: 20px;
 display: flex;
 	justify-content: flex-end;
+}
+.aptImage:hover{
+	transition: 1s;
+	background: var(--blue);
 }
 .aptImage img{
 	max-width: 200px;
@@ -569,6 +595,10 @@ display: flex;
 /*box-shadow: 10px 10px 15px var(--light), -10px -10px 15px var(--blue);*/
 border: 2px solid var(--light);
 border-radius: 10px;
+}
+.formy form:hover{
+    transition: 1s;
+    background: var(--blue);
 }
 .formy form div{
 	padding: 5px 10px;
@@ -627,7 +657,7 @@ border-radius: 10px;
 
 /*================BOOK APPOINTMENT END===========*/
 
-/*============ REVIEWS CLASS END ===========*/
+/*============ REVIEWS CLASS START===========*/
 
 .reviews{
 	background: var(--white);
@@ -718,7 +748,7 @@ box-shadow: 2px 2px 5px var(--light), -2px -2px 5px var(--light);
 /*============ FAQ CLASS START===========*/
 .FAQ{
 	background: var(--white);
-	padding: 60px 25px;
+	padding:10px 20px 60px 20px;
 }
 .FaqH{
 	margin: 10px 0;
@@ -782,6 +812,10 @@ padding-top:35px ;
 	max-width: 400px;
 
 }
+.faqImg div{
+	transition: 1s;
+	background: var(--blue);
+}
 
 .faqImg div img{
 }
@@ -790,6 +824,10 @@ padding-top:35px ;
 /*============ FOOTER START===========*/
 .foot{
 	padding: 20px;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+
 
 }
 .descrip{
@@ -813,6 +851,11 @@ padding-top:35px ;
 	padding: 10px;
 	border: 0.1px solid var(--blue);
 	margin-right:10px ;
+}
+.soc i:hover{
+	transition: 1s;
+	background: var(--blue);
+	color: var(--white);
 }
 .importantL{
 	padding: 20px;
@@ -950,5 +993,26 @@ height: 100vh;
 }
 .aptSubH{
 	font-size: 15px;
+}
+.faqImg{
+	display: none;
+}
+
+
+.serve{
+	top: 100px;
+	padding:5px 10px;
+}
+.serve i{
+	font-size: 30px;
+}
+.two .s{
+	font-size: 10px;
+}
+.two .t{
+	font-size: 10px;
+}
+.heading .subheading{
+	font-size: 22px;
 }
 }
