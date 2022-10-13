@@ -3,7 +3,7 @@ let header = document.querySelector('.headin');
 function renderHeader(argument) {
 	header.innerHTML = `<!--logo-->
 	<div class="logo">
-		<a href="index.html"><i class="fa-solid fa-notes-medical"></i>Healthy</a>
+		<a href="index.html"><i class="fa-solid fa-notes-medical"></i> MyHealth</a>
 	</div>
 	<!--nav links-->
 	<div class="links">
@@ -37,14 +37,20 @@ function renderHeader(argument) {
 			</li>
 		</ul>
 	</div>
-	
+	<!--	<span class="sun">
+<i class="fa-solid fa-sun "></i>
+</span>
+<span class="moon">
+<i class="fa-solid fa-moon "></i>
+</span>
+	-->
 	<!--accounts-->
 	<div class="acct">
-		<li class="ac">Account <i class="fa-solid fa-user"></i></li>
-		<ul class="users">
-			<li><a href="accounts.html" class="sign">Sign Up</a></li>
+		<li class="ac">Account <i class="fa-solid fa-user"> </i></li>
+			<li class="users"><a href="accounts.html" class="sign">Sign Up</a></li>
 		</ul>
 	</div>
+	
 	<div class="bars">
 		<i id="open" class="fa-solid fa-bars"></i>
 		<i id="close" class="fa-regular fa-x"></i>

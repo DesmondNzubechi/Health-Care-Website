@@ -20,6 +20,24 @@ close.style.display = 'none';
 
 });
 
+/*
+//LIGHT AND DARK MODE
+
+let moon = document.querySelector('.moon');
+let sun = document.querySelector('.sun');
+let getBody = document.body;
+
+moon.addEventListener('click', () => {
+	getBody.classList.add('darkTheme');
+	moon.style.display = 'none';
+	sun.style.display = 'block';
+});
+sun.addEventListener('click', () => {
+	getBody.classList.remove('darkTheme');
+	moon.style.display = 'block';
+	sun.style.display = 'none';
+});
+*/
 //display sign up button on hover
 let act = document.querySelector('.acct');
 let ac =  document.querySelector('.ac');
