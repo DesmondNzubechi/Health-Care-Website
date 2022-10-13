@@ -152,11 +152,12 @@ function footerRendering() {
 			</p>
 			<div>
 				<form>
-				<input type="email" name="email" placeholder="Email Address">
+				<input type="email" name="email" placeholder="Email Address" required>
 				<button type="submit" class="newsLBt">Subscribe Now</button>
 			</div>
 		</div>
 	</div>
+	<div class="dev text-center"><a href="https://nzubechukwu.netlify.app">Built with love by <span>Nzubechukwu</span></a></div>
 	<div class="text-center copy">
 		<p>&copy; MyHealth 2022 All Right Reserved.</p>
 	</div>`
