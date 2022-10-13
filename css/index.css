@@ -884,7 +884,7 @@ padding-top:35px ;
 .subscribe form input{
 	display: flex;
 	justify-content: center;
-	min-width: 300px;
+	
 	max-width: 500px;
 	background: var(--white);
 	border:solid 2px var(--cloud);
