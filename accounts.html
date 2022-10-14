@@ -22,7 +22,7 @@
 	<title>Log In Here</title>
 </head>
 <body>
-	<header>
+	<header class="headin">
 	
 </header>
 
@@ -62,26 +62,26 @@
 	<form class="logInForm">
 			<div>
 			<label class="lab"><i class="fa-solid fa-user"></i> Full Name</label>
-		<input type="text" class="logInE" placeholder="Full Name" name="">
+		<input type="text" class="logInE" placeholder="Full Name" name="" required>
 		<div>
 			
 			<label class="lab"><i class="fa-solid fa-phone"></i> Mobile No</label>
-		<input type="number" class="logInE" placeholder="Mobile" name="">
+		<input type="number" class="logInE" placeholder="Mobile" name="" required>
 		</div>
 		<div>
 		<label class="lab"><i class="fa-solid fa-envelope"></i> Email Address</label>
-		<input type="email" class="logInE" placeholder="e.g name@mail.co" name="">
+		<input type="email" class="logInE" placeholder="e.g name@mail.co" name="" required>
 	</div>
 	<div>
 		<label class="lab"><i class="fa-solid fa-unlock"></i> Password</label>
-		<input type="password" class="logInP" placeholder="Input Password" name="">
+		<input type="password" class="logInP" placeholder="Input Password" name="" required>
 	</div>
 	<div>
 		<label class="lab"><i class="fa-solid fa-lock"></i> Confirm Password</label>
-		<input type="password" class="logInP" placeholder="Confirm Password" name="">
+		<input type="password" class="logInP" placeholder="Confirm Password" name="" required>
 	</div>
 		<div class="check">
-		<input type="checkbox" class="logInC" name=""><label class="checkboxL">Show password</label>
+		<input type="checkbox" required class="logInC" name=""><label class="checkboxL">Show password</label>
 	</div>
 	<button type="submit" class="logInSubmit">Sign Up</button>
 	
@@ -99,7 +99,11 @@
 <script type="text/javascript" src="javascript/header.js"></script>
 
 <script type="text/javascript" src="javascript/index.js"></script>
+
 <script type="text/javascript" src="javascript/accounts.js"></script>
+
+
+
 
 </body>
 </html>

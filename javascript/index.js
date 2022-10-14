@@ -182,3 +182,129 @@ function footerRendering() {
 };
 
 footerRendering();
+
+
+//Validating the book appointment form
+
+let btnAppoint = document.querySelector('.appointBtn');
+let fullName = document.querySelector('.fullName');
+let emailAddress = document.querySelector('.emailAddress');
+let phoneNum = document.querySelector('.phoneNum');
+let inputDiv = document.querySelectorAll('.inputDiv');
+let input = document.querySelectorAll('.input');
+let appointmentBtn = document.querySelector('.appointBtn');
+let select = document.querySelector('.select');
+let booking = document.querySelector('.booking');
+let sectionBooked = document.querySelector('.selected');
+appointmentBtn.addEventListener('click', () => {
+	let selectWarningSign = select.parentElement.children[1];
+	inputDiv.forEach(ipt => {
+      let getInput = ipt.children[0];
+      let getInputValuee = getInput.value;
+      let getWarningSign = ipt.children[1];
+
+      if (getInput.type === 'text' && !getInputValuee.includes(' ')) {
+      	 getWarningSign.style.display = 'inline-flex';
+      	   ipt.style.border = '2px solid red';
+      	   booking.style.top = '-2000px';
+      	} else if (getInput.type === 'email' && !getInputValuee.includes('@gmail.com')) {
+      		 getWarningSign.style.display = 'inline-flex';
+      		   ipt.style.border = '2px solid red';
+      		    booking.style.top = '-2000px';
+      		} else if(getInput.type === 'number' && getInputValuee.length <= 10) {
+      			 getWarningSign.style.display = 'inline-flex';
+      			   ipt.style.border = '2px solid red';
+      			    booking.style.top = '-2000px';
+      			} else if(getInputValuee === 'Select Here'){
+      				 getWarningSign.style.display = 'inline-flex';
+      				   ipt.style.border = '2px solid red';
+      				    booking.style.top = '-2000px';
+      				} else {
+      					let selectValue = select.value;
+      					 sectionBooked.innerText = selectValue;
+      					booking.style.top = '0';
+      					 ipt.style.border = 'none';
+
+      				};
+	});
+});
+
+
+input.forEach(getInputValue => {
+	getInputValue.addEventListener('blur', () => {
+		let getval = getInputValue.value;
+		let getInputPa = getInputValue.parentElement;
+		let good = getInputPa.querySelector('.good');
+		let bad = getInputPa.querySelector('.bad'); 
+
+//validating user name
+	if (getInputValue.type === 'text' ) {
+		 if (!getval || !getval.includes(' ')) {
+       
+       bad.style.display = 'inline-flex';
+       good.style.display = 'none';
+       getInputPa.style.border = '2px solid red';
+       booking.style.top = '-2000px';
+          } else {
+ good.style.display = 'inline-flex';
+       bad.style.display = 'none';
+          getInputPa.style.border = 'none';
+          };
+		};
+
+//Validating user email
+		if (getInputValue.type === 'email' ) {
+		 if (!getval || !getval.includes('@gmail.com')) {
+       
+       bad.style.display = 'inline-flex';
+       good.style.display = 'none';
+       getInputPa.style.border = '2px solid red';
+        booking.style.top = '-2000px';
+          } else {
+ good.style.display = 'inline-flex';
+       bad.style.display = 'none';
+         getInputPa.style.border = 'none';
+          };
+		};
+
+
+//Validating phone number
+	if (getInputValue.type === 'number' ) {
+		 if (!getval || getval.length <= 10 ) {
+       
+       bad.style.display = 'inline-flex';
+       good.style.display = 'none';
+       getInputPa.style.border = '2px solid red';
+        booking.style.top = '-2000px';
+          } else {
+ good.style.display = 'inline-flex';
+       bad.style.display = 'none';
+       getInputPa.style.border = 'none';
+          };
+		};
+
+	});
+});
+
+//validation of select option
+select.addEventListener('click', () => {
+	let selectParent = select.parentElement;
+	let bad  = selectParent.querySelector('.bad');
+	let good = selectParent.querySelector('.good')
+  if (select.value === 'Select Here') {
+  	 bad.style.display = 'inline-flex';
+       good.style.display = 'none';
+       selectParent.style.border = '2px solid red';
+        booking.style.top = '-2000px';
+  } else {
+  	 good.style.display = 'inline-flex';
+       bad.style.display = 'none';
+       selectParent.style.border = 'none';
+  }
+});
+
+let x = document.querySelector('.x');
+x.addEventListener('click', () => {
+	x.parentElement.parentElement.style.top = '-2000px';
+});
+

@@ -618,7 +618,7 @@ border-radius: 10px;
     transition: 1s;
     background: var(--blue);
 }
-.formy form div{
+.formy form > div{
 	padding: 5px 10px;
 	margin: 10px;
 }
@@ -634,11 +634,28 @@ border-radius: 10px;
 	font-size: 15px;
 	font-weight: bold;
 }
+.inputDiv{
+	background: var(--cloud);
+	border-radius: 5px;
+	padding: 3px;
 
+}
+.inputDiv i{
+	font-weight: bolder;
+	display: none;
+
+}
+.good{
+	color:var(--blue);
+}
+.bad{
+	color: red;
+}
 .formy form input {
 	max-width: 170px;
 	background: var(--cloud);
 	border: none;
+	outline: none;
 	border-radius: 5px;
 	padding: 5px;
 }
@@ -649,6 +666,7 @@ border-radius: 10px;
 	border: none;
 	border-radius: 5px;
 	padding: 5px;
+	outline: none;
 }
 
 .appoint{
@@ -673,6 +691,69 @@ border-radius: 10px;
 	width: 100%;
 }
 
+
+/*BOOKING MESSAGE*/
+
+.booking{
+	background: rgba(0, 0, 0, .70);
+	position: fixed;
+	top: -2000px;
+	transition: 1s;
+	left: 0 !important;
+  z-index: 1000;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+
+}
+
+
+.bookingMessage{
+	background: var(--blue);
+	padding: 20px;
+	border-radius: 10px;
+  display: block;
+  position: relative;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	transition: 1s;
+	text-align: center;
+}
+.warning{
+	font-size: 50px;
+	color: red;
+		display: none;
+}
+.success{
+	font-size: 50px;
+	color: white;
+}
+.selected{
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--light);
+	text-transform: uppercase;
+} 
+.status{
+	font-size: 20px;
+}
+.x{
+	position: absolute;
+	top: -5px;
+	right: 10px;
+	color:var(--white);
+	font-size: 30px;
+	cursor: pointer;
+	font-weight: bolder;
+}
+.x:hover{
+	transition: 1s;
+	color: red;
+}
 /*================BOOK APPOINTMENT END===========*/
 
 /*============ REVIEWS CLASS START===========*/
@@ -1053,4 +1134,14 @@ height: 100vh;
 .heading .subheading{
 	font-size: 22px;
 }
+.booking{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	position: fixed;
+/*	top: 25%;
+	left: 30%;*/
+}
+
 }

@@ -209,37 +209,38 @@
   			</div>
   			<div>
   			<label>Name*</label>
-  			<input type="text" name="Full Name" placeholder="Full Name">
+  			<div class="inputDiv">
+  			<input type="text" class="input fullName" name="Full Name" placeholder="Full Name"/> <i class="fa-solid bad fa-triangle-exclamation"></i> <i class="fa-sharp fa-solid good fa-circle-check"></i></div>
   		</div>
   		<div>
   			<label>Email*</label>
-  			<input type="email" name="Full Name" placeholder="example@gmail.com">
+  			<div class="inputDiv">
+  			<input type="email" class="input emailAddress" name="Email Address" placeholder="name@mail.com"/> <i class="fa-solid bad fa-triangle-exclamation"></i> <i class="fa-sharp fa-solid good fa-circle-check"></i></div>
   		</div>
   		<div>
-  			<label>Department*</label>
-  			<select>
-  				<option>Select Here</option>
-  				<option>Immunisation</option>
-  				<option>Medical Surgery</option>
-  				<option>Aged Care</option>
-  				<option>Physical Fitnes</option>
-  				<option>Skin Care</option>
-  				<option>Antenatal Pregnancy</option>
-  				<option>Travel Vacinatation</option>
-  			</select>
-  		</div><!--
+  			<label>Phone no*</label>
+  			<div class="inputDiv">
+  			<input type="number" class="input phoneNum" name="phone number" placeholder="Phone No"/> <i class="fa-solid bad fa-triangle-exclamation"></i> <i class="fa-sharp fa-solid good fa-circle-check"></i></div>
+  		</div>
   		<div>
-  			<label>Time*</label>
-  			<select>
-  				<option>Select Department</option>
-  				<option>Select Department</option>
-  				<option>Select Department</option>
-  				<option>Select Department</option>
-  				<option>Select Department</option>
+  			<label>Booking For*</label>
+  			<div class="inputDiv">
+  			<select class="select">
+  				<option>Select Here</option>
+  				<option class="opt" value="Immunisation">Immunisation</option>
+  				<option class="opt" value="Medical Surgery">Medical Surgery</option>
+  				<option class="opt" value="Aged Care">Aged Care</option>
+  				<option class="opt" value="Physical Fitnes">Physical Fitnes</option>
+  				<option class="opt" value="Skin Care">Skin Care</option>
+  				<option class="opt" value="Antenatal Pregnancy">Antenatal Pregnancy</option>
+  				<option class="opt" value="Travel Vacination">Travel Vacinatation</option>
   			</select>
-  		</div>-->
+  			<i class="fa-solid bad fa-triangle-exclamation"></i> <i class="fa-sharp fa-solid good fa-circle-check"></i>
+  		</div>
+  		</div>
+  		
   		<div class="appoint">
-  			<button  type="btn_s">Book Appointment</button>
+  			<button class="appointBtn"  type="button">Book Appointment</button>
   		</div>
   		</form>
   	</div>
@@ -248,6 +249,14 @@
 </div>
 
 
+<div class="booking  ">
+	<div class="bookingMessage">
+		<span class="x">X</span>
+	<span class="warning "> <i class="fa-solid fa-triangle-exclamation"></i> </span> <span class="success"><i class="fa-sharp fa-solid  fa-circle-check"></i></span>
+	 <p class="selected">Appointment</p>
+	 <p class="status">Successfully Booked</p>
+	</div>
+</div>
 <!--================= BOOK APPOINTMENT END ==================-->
 
 <!--================= OUR PATIENTS REVIEW START ==================-->

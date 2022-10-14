@@ -80,6 +80,7 @@
 .logInForm .logInE, .logInForm .logInP{
 	width: 100%;
 	border: none;
+	outline: none;
 	background: var(--light);
 	padding: 5px 0;
 	font-weight: 580;
