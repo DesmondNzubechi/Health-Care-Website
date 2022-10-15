@@ -15,10 +15,10 @@ let ike = {
 let ikePro = document.querySelector('.ike');
 let renderIke = () => {
 	ikePro.innerHTML = `<div class="row container-fluid dr">
-  		<div class="col-sm-12 col-lg-5 col-md-12 drImage">
+  		<div class="col-sm-12 col-lg-5 col-md-12 animate drImage">
   			<img src="${ike.img}">
   		</div>
-  		<div class="col-sm-12 col-lg-5 col-md-12 drDescript">
+  		<div class="col-sm-12 animate col-lg-5 col-md-12 drDescript">
   			<p class="drName">${ike.name}</p>
   			<p>${ike.Fdescrip}</p>
   			<p>${ike.Sdescrip}</p>

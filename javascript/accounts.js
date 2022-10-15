@@ -3,8 +3,11 @@ let signUp = document.querySelector('.signUp');
 let logInView = document.querySelector('.logInView');
 let signUpView = document.querySelector('.signUpView');
 let button =  document.querySelectorAll('button');
-
-
+let body = document.body;
+function message() {
+alert('PLease kindly exercise some patience with us, The user panel is still under production.')
+};
+message();
 signUpView.addEventListener('click', () => {
 logIn.style.display = 'none';
 signUp.style.display = 'block';
@@ -18,10 +21,10 @@ signUp.style.display = 'none';
 button.forEach(btn => {
 	btn.addEventListener('submit', (e) => e.prevDefault())
 });
-let footer = document.querySelector('.foote');
+let foote = document.querySelector('.foote');
 
 function footerRendering() {
-	footer.innerHTML = `<div class="row foot">
+	foote.innerHTML = `<div class="row foot animate">
 		<div class="col-lg-4 col-md-4 col-sm-12 descrip">
 			<p class="descripMainH">MyHealthCare</p>
 			<p class="descripSubH">MyHealthCare Is an adminitrative support entry and clinical service</p>

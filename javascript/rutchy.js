@@ -14,10 +14,10 @@ let Rutchy = {
 let RutchyPro = document.querySelector('.Rutchy');
 let renderRutchy = () => {
 	RutchyPro.innerHTML = `<div class="row container-fluid dr">
-  		<div class="col-sm-12 col-lg-5 col-md-12 drImage">
+  		<div class="col-sm-12 col-lg-5 col-md-12 animate drImage">
   			<img src="${Rutchy.img}">
   		</div>
-  		<div class="col-sm-12 col-lg-5 col-md-12 drDescript">
+  		<div class="col-sm-12 animate col-lg-5 col-md-12 drDescript">
   			<p class="drName">${Rutchy.name}</p>
   			<p>${Rutchy.Fdescrip}</p>
   			<p>${Rutchy.Sdescrip}</p>

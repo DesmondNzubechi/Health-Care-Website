@@ -13,10 +13,10 @@ let freeman = {
 let freemanPro = document.querySelector('.freeman');
 let renderFreeman = () => {
 	freemanPro.innerHTML = `<div class="row container-fluid dr">
-  		<div class="col-sm-12 col-lg-5 col-md-12 drImage">
+  		<div class="col-sm-12 col-lg-5 col-md-12 animate drImage">
   			<img src="${freeman.img}">
   		</div>
-  		<div class="col-sm-12 col-lg-5 col-md-12 drDescript">
+  		<div class="col-sm-12 animate col-lg-5 col-md-12 drDescript">
   			<p class="drName">${freeman.name}</p>
   			<p>${freeman.Fdescrip}</p>
   			<p>${freeman.Sdescrip}</p>

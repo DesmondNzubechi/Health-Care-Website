@@ -15,10 +15,10 @@ let musk = {
 let muskPro = document.querySelector('.musk');
 let renderMusk = () => {
 	muskPro.innerHTML = `<div class="row container-fluid dr">
-  		<div class="col-sm-12 col-lg-5 col-md-12 drImage">
+  		<div class="col-sm-12 col-lg-5 col-md-12 animate drImage">
   			<img src="${musk.img}">
   		</div>
-  		<div class="col-sm-12 col-lg-5 col-md-12 drDescript">
+  		<div class="col-sm-12 animate col-lg-5 col-md-12 drDescript">
   			<p class="drName">${musk.name}</p>
   			<p>${musk.Fdescrip}</p>
   			<p>${musk.Sdescrip}</p>

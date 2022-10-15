@@ -34,14 +34,14 @@
 .our-team{
 	background: var(--white);
 	padding: 40px 60px;
-	margin-top: 100px;
+	margin-top: 70px;
 }
 
 .pro{
 	font-size: 20px;
 	color: var(--blue);
 	font-weight: bold;
-	margin: 30px;
+	margin: 20px;
 }
 
 .meet{
@@ -228,4 +228,19 @@ margin: 5px;
 	color: var(--blue);
 	transition: 1s;
 
+}
+
+@media (max-width: 768px) {
+	.pro{
+	font-size: 15px;
+	color: var(--blue);
+	font-weight: bold;
+	margin: 30px;
+}
+
+.meet{
+	color: var(--dark);
+	font-size: 15px;
+	font-weight: bolder;
+}
 }

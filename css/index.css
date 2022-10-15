@@ -40,6 +40,11 @@ body{
 	
 }
 
+.animation{
+	opacity: 0;
+	transform: translateY(12em);
+}
+
 header{
 	display: flex;
 	justify-content: space-around;
@@ -232,7 +237,7 @@ header{
 .l a{
 	text-decoration: none;
 	font-size: 30px;
-	margin: 10px 15px;
+	margin: 10px 0;
 	color: var(--white);
 	padding: 0 5px;
 	font-weight: bold;
@@ -278,6 +283,10 @@ font-weight: 550;
 	position:;
 	bottom: 0;
 
+}
+.img img:hover{
+	transition: 1s;
+margin:0 20px ;
 }
 .serve{
 	position: absolute;

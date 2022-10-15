@@ -14,10 +14,10 @@ let Chinenye = {
 let ChinenyePro = document.querySelector('.chinenye');
 let renderChinenye = () => {
 	ChinenyePro.innerHTML = `<div class="row container-fluid dr">
-  		<div class="col-sm-12 col-lg-5 col-md-12 drImage">
+  		<div class="col-sm-12 col-lg-5 col-md-12 animate drImage">
   			<img src="${Chinenye.img}">
   		</div>
-  		<div class="col-sm-12 col-lg-5 col-md-12 drDescript">
+  		<div class="col-sm-12 animate col-lg-5 col-md-12 drDescript">
   			<p class="drName">${Chinenye.name}</p>
   			<p>${Chinenye.Fdescrip}</p>
   			<p>${Chinenye.Sdescrip}</p>

@@ -143,7 +143,7 @@ question.forEach(q => {
 let footer = document.querySelector('.footer');
 
 function footerRendering() {
-	footer.innerHTML = `<div class="row foot">
+	footer.innerHTML = `<div class="row foot ">
 		<div class="col-lg-4 col-md-4 col-sm-12 descrip">
 			<p class="descripMainH">MyHealthCare</p>
 			<p class="descripSubH">MyHealthCare Is an adminitrative support entry and clinical service</p>
@@ -196,6 +196,7 @@ let appointmentBtn = document.querySelector('.appointBtn');
 let select = document.querySelector('.select');
 let booking = document.querySelector('.booking');
 let sectionBooked = document.querySelector('.selected');
+
 appointmentBtn.addEventListener('click', () => {
 	let selectWarningSign = select.parentElement.children[1];
 	inputDiv.forEach(ipt => {
@@ -308,3 +309,21 @@ x.addEventListener('click', () => {
 	x.parentElement.parentElement.style.top = '-2000px';
 });
 
+/*
+//ADDING ANIMATION
+let getAnimated = document.querySelectorAll('.animate');
+
+let revealSection = (entries, observer) => {
+const [entry] = entries;
+console.log(entry);
+entry.target.classList.remove('animation');
+getAnimated.style.transition = '1s';
+};
+const sectionObserver = new IntersectionObserver(revealSection, {
+	root: null,
+	threshold: 0.15,
+});
+getAnimated.forEach(animation => {
+	sectionObserver.observe(animation);
+	animation.classList.add('animation');
+});*/

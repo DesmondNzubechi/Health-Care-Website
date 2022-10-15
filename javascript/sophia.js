@@ -13,10 +13,10 @@ let Sophia = {
 let SophiaPro = document.querySelector('.Sophia');
 let renderSophia = () => {
 	SophiaPro.innerHTML = `<div class="row container-fluid dr">
-  		<div class="col-sm-12 col-lg-5 col-md-12 drImage">
+  		<div class="col-sm-12 col-lg-5 col-md-12 animate drImage">
   			<img src="${Sophia.img}">
   		</div>
-  		<div class="col-sm-12 col-lg-5 col-md-12 drDescript">
+  		<div class="col-sm-12 animate col-lg-5 col-md-12 drDescript">
   			<p class="drName">${Sophia.name}</p>
   			<p>${Sophia.Fdescrip}</p>
   			<p>${Sophia.Sdescrip}</p>

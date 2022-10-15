@@ -13,10 +13,10 @@ let Mark = {
 let MarkPro = document.querySelector('.Mark');
 let renderMark = () => {
 	MarkPro.innerHTML = `<div class="row container-fluid dr">
-  		<div class="col-sm-12 col-lg-5 col-md-12 drImage">
+  		<div class="col-sm-12 col-lg-5 col-md-12 animate drImage">
   			<img src="${Mark.img}">
   		</div>
-  		<div class="col-sm-12 col-lg-5 col-md-12 drDescript">
+  		<div class="col-sm-12 animate col-lg-5 col-md-12 drDescript">
   			<p class="drName">${Mark.name}</p>
   			<p>${Mark.Fdescrip}</p>
   			<p>${Mark.Sdescrip}</p>

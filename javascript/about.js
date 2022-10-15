@@ -27,7 +27,7 @@ let about =
 };
 
 let renderAbout = () => {
-aboutPage.innerHTML = `<div class="row abtt">
+aboutPage.innerHTML = `<div class="row abtt animate">
   		<div class="col-sm-12 col-md-12 col-lg-6">
   			<p class="abtHead">${about.abt}</p>
   			<p class="abtDes">${about.firstP}</p>
@@ -41,7 +41,7 @@ aboutPage.innerHTML = `<div class="row abtt">
 
   			</div>
   		</div>
-  		<div class="col-sm-12 col-md-12 col-lg-6 abtPics">
+  		<div class="col-sm-12 col-md-12 col-lg-6 abtPics animate">
   			<img  src="${about.abtImg}">
   		</div>
   	</div>

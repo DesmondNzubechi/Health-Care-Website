@@ -13,10 +13,10 @@ let precious = {
 let preciousPro = document.querySelector('.precious');
 let renderPrecious = () => {
 	preciousPro.innerHTML = `<div class="row container-fluid dr">
-  		<div class="col-sm-12 col-lg-5 col-md-12 drImage">
+  		<div class="col-sm-12 col-lg-5 col-md-12 animate drImage">
   			<img src="${precious.img}">
   		</div>
-  		<div class="col-sm-12 col-lg-5 col-md-12 drDescript">
+  		<div class="col-sm-12 animate col-lg-5 col-md-12 drDescript">
   			<p class="drName">${precious.name}</p>
   			<p>${precious.Fdescrip}</p>
   			<p>${precious.Sdescrip}</p>

@@ -11,10 +11,11 @@ let replaceImg = {image: 'images/covid.jpg'};
 			&keywords=covid
 			
 	`)
+		if (!getNes.ok) throw new Error('Failed To Fetch Covid19 News. Please Make Sure You Have Good Internet Connection');
 		let res = await getNes.json();
 		let getdat = res.data;
 		getdat.forEach(function(data) {
-			healthNews.innerHTML += `<div class="col-lg-3 col-md-6 col-sm-12"><div class="newS">
+			healthNews.innerHTML += `<div class="col-lg-3 col-md-6 col-sm-12 animate"><div class="newS">
   			<p class="title">${data.title}</p>
   			<img class="newsImg img-flui" src="${!data.image ? replaceImg.image : data.image }">
   			<p class="description">${data.description}
@@ -24,7 +25,10 @@ let replaceImg = {image: 'images/covid.jpg'};
   		console.log(data)
 		})
 	} catch(err) {
-		console.log(err)
+		setTimeout(() => {
+alert('Failed To Fetch Covid19 News. Please Make Sure You Have Good Internet Connection');
+		}),
+	10000
 	};
 };
 

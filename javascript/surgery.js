@@ -1,6 +1,6 @@
 
 
-//Contents on immunisation page
+//Contents on medical page
 let servicesPageContent = [
  /*{
  	immHeading: 'IMMUNISATION',
@@ -31,7 +31,7 @@ function renderImmunisation() {
 	 servicesPageContent.forEach(content => {
 		mainMenu.innerHTML += `<div>
 		<div class="row imm">
-			<div class="immT col-lg-5 col-md-6 col-sm-12">
+			<div class="immT col-lg-5 col-md-6 col-sm-12 animate">
 				<div class="topV">
 			<p>${content.tVHeading}</p>
 		</div>
@@ -41,7 +41,7 @@ function renderImmunisation() {
 		<a href="#" class="bookNow">${content.tVBook} >></a>
 	</p>
 			</div>
-			<div class="immI col-lg-5 col-md-6 col-sm-12">
+			<div class="immI col-lg-5 col-md-6 col-sm-12 animate">
 				<img src="${content.tVImage}" class="img-fluid">
 			</div>
 		</div>
@@ -105,13 +105,13 @@ closeForm.addEventListener('click', () => {
 
 
 let submitBtn = document.querySelector('.subM');
-let input = document.querySelectorAll('.input');
+let inputt = document.querySelectorAll('.input');
 let successful = document.querySelector('.patientFormRegStatFailed');
 let unsuccessful = document.querySelector('.patientFormRegStatSuccess');
 
 //displaying success and error message conditionally when submit button is clicked
 submitBtn.addEventListener('click', () => {
-input.forEach(checkValue => {
+inputt.forEach(checkValue => {
 	if (checkValue.value === '') {
     successful.style.top = '30%';
 	} else {

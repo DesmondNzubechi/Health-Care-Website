@@ -14,10 +14,10 @@ let Chukwubuike = {
 let ChukwubuikePro = document.querySelector('.buike');
 let renderChukwubuike = () => {
 	ChukwubuikePro.innerHTML = `<div class="row container-fluid dr">
-  		<div class="col-sm-12 col-lg-5 col-md-12 drImage">
+  		<div class="col-sm-12 col-lg-5 col-md-12 animate drImage">
   			<img src="${Chukwubuike.img}">
   		</div>
-  		<div class="col-sm-12 col-lg-5 col-md-12 drDescript">
+  		<div class="col-sm-12 animate col-lg-5 col-md-12 drDescript">
   			<p class="drName">${Chukwubuike.name}</p>
   			<p>${Chukwubuike.Fdescrip}</p>
   			<p>${Chukwubuike.Sdescrip}</p>
