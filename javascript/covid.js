@@ -26,7 +26,7 @@ let replaceImg = {image: 'images/covid.jpg'};
 		})
 	} catch(err) {
 		setTimeout(() => {
-alert('Failed To Fetch Covid19 News. Please Make Sure You Have Good Internet Connection');
+alert('Failed To Fetch Covid19 News. Please Make Sure You Have Good Internet Connection. If you have good internet Connection then you have to update your browser');
 		}),
 	10000
 	};

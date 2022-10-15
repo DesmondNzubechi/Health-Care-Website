@@ -24,7 +24,7 @@ let replaceImg = {image: 'images/medicine.jpg'};
   		console.log(data)
 		})
 	} catch(err) {
-		alert('Failed To Fetch Health News. Please Make Sure You Have Good Internet Connection');
+		alert('Failed To Fetch Health News. Please Make Sure You Have Good Internet Connection.If you have good internet Connection then you have to update your browser');
 	};
 };
 
