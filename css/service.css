@@ -60,12 +60,18 @@
 	width: fit-content;
 	margin: 20px;
 	position: relative;
+	background: linear-gradient(var(--white), var(--white), var(--white), var(--blue), var(--blue));
+	border-radius: 0 0 100% 100%;
 }
-.travelVaccine .immI{
+.immI:hover{
+	transform: translateY(15px);
+	transition: 1s;
+}
+/*.travelVaccine .immI{
 	background: linear-gradient(var(--white), var(--white), var(--white), var(--blue), var(--blue));
 	border-radius: 0 0 100% 100%;
 
-}
+}*/
 
 /*=========PATIENTS FORM START===========*/
 
