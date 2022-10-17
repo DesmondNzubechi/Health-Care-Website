@@ -31,7 +31,7 @@ function renderImmunisation() {
 	 servicesPageContent.forEach(content => {
 		mainMenu.innerHTML += `<div>
 		<div class="row imm">
-			<div class="immT col-lg-5 col-md-6 col-sm-12 animate">
+			<div class="immT col-lg-5 col-md-6 col-sm-12 animate" data-aos-duration="1000" data-aos="fade-up">
 				<div class="topV">
 			<p>${content.tVHeading}</p>
 		</div>
@@ -41,7 +41,7 @@ function renderImmunisation() {
 		<a href="#" class="bookNow">${content.tVBook} >></a>
 	</p>
 			</div>
-			<div class="immI col-lg-5 col-md-6 col-sm-12 animate">
+			<div class="immI col-lg-5 col-md-6 col-sm-12 animate" data-aos-duration="1000" data-aos="fade-up">
 				<img src="${content.tVImage}" class="img-fluid">
 			</div>
 		</div>
