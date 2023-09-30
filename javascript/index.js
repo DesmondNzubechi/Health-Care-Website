@@ -175,7 +175,7 @@ function footerRendering() {
 			</div>
 		</div>
 	</div>
-	<div class="dev text-center"><a href="https://nzubechukwu.netlify.app">Built with love by <span>Nzubechukwu</span></a></div>
+	<div class="dev text-center"><a href="https://nzubechukwu.com">Built with love by <span>Nzubechukwu</span></a></div>
 	<div class="text-center copy">
 		<p>&copy; MyHealth 2022 All Right Reserved.</p>
 	</div>`
